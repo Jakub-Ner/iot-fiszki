@@ -176,13 +176,14 @@ Czym jest **SRAM**?
 Static Random-Access Memory, pamięć ulotna
 
 Czym jest **EEPROM**?
+![[Pasted image 20240111224938.png|400]]
 ?
 Electrically Erasable Programmable Read-Only Memory. Podobny do pamięci Flash ale można w nim czyścić pojedynczy bajt. Wolniejszy ale prostszy w użyciu 
 
 
 Do czego służą **Fusebity**?
 ?
-Pozwalają skonfigurować wybrane funkcje lub parametry pracy mikrokontrolera jeszcze przed uruchomieniem programu z jego pamięci. Trzymane są w pamięci EEPROM.
+Pozwalają skonfigurować wybrane funkcje (np watchdog'a) lub parametry pracy mikrokontrolera jeszcze przed uruchomieniem programu z jego pamięci. Trzymane są w pamięci EEPROM. 
 
 Do czego służą **Lockbity**?
 ?
@@ -250,9 +251,11 @@ Czym jest przerwanie?
 ?
 Zasygnalizowana zmiana lub osiągnięcie stanu opisanego przez warunek (np. zmiana stanu na pinie) przerwania. Cechują się priorytetami. Na ich podstawie kontroler CPUINT decyduje, które przerwanie należy obsłużyć, a które musi poczekać. CPUINT ustawia licznik programu, tak aby wskazywał skok do procedury obsługi przerwania (tzw. wektor przerwania). Po zakończeniu procedury, wykonanie programu wznawiane jest od miejsca gdzie zostało przerwane.
 
-Czym jest zdarzenie?
+Czym jest system zdarzeń (**EVSYS**) i do czego służy?
+![[Pasted image 20240111224741.png|700]]
 ?
-TODO
+Pozwala podsystemom (urządzeniom peryferyjnym) lub programowi komunikować się bezpośrednio (z pominięciem CPU) poprzez konfigurowalną sieć routingu zdarzeń. 
+
 ## Wprowadzenie do programowania mikrokontrolerów 04
 
 Czym jest **Timer**?
@@ -261,7 +264,7 @@ Licznik zliczający od 0 wzwyż, do momentu "przekręcenia" się licznika. Zlicz
 
 Do czego służy Pulse Width Modulation (**PWM**)?
 ?
-Do kontrolowania średniego napięcia urządzenia.
+Służy do regulacji urządzenia (np. jasność świecenia diody, prędkość obrotu silnika) poprzez modulację prądu lub napięcia (tzw. zmiana wypełnienia sygnału)
 ![[Pasted image 20231229142738.png|700]]
 
 Czym charakteryzuje się modulacja PWM z **wykorzystaniem jednego zbocza**?
@@ -883,14 +886,143 @@ Robak do: niszczenia pomp i wirówek gazowych do wzbogacania uranu, a konkretnie
 1. infekcja: wgranie oprogramowania na pierwsze urządzenie przy pomocy USB i skradzionego i odpowiednio podpisanego certyfikatu sterownika Realtek (dzięki temu oprogramowanie antywirusowe nie było w stanie wykryć malware'u)
 2. atak i rozprzestrzenianie: skanowanie systemu Windows w poszukiwaniu oprogramowania sterującego PLC Siemens SCADA 
 
-
-
-
-
 Opisz atak Chain Reaction 
 ![[Pasted image 20240109115249.png|400]]
 ?
-Atak na sieci o topologi siatki (mesh) PAN, które mogą być wykonane bez internetu
+Atak na sieci o topologi siatki (mesh) PAN, o ile do konfiguracji użyto protokół Zigbee (w tym protokole wiadomości nie są szyfrowane ani podpisywane, jedynie wymiana kluczy była szyfrowana, jednak klucz główny wyciekł). Ataki mogą być wykonane bez internetu
+1. Infekcja: Przerwanie szyfrowania i podpisywania, a następnie wprowadzenie "łatki" do pojedynczej żarówki. 
+2. Rozprzestrzenianie: Zaatakowana żarówka przyłączy się do sieci na podstawie skradzionego klucza głównego i wykorzysta bezpieczeństwo zbliżeniowe. Po pomyślnym dołączeniu żarówki zaraża ona sąsiednie (w promieniu kilkuset metrów) żarówki
+
+Czym się różnią technologia informacyjna od operacyjnej?
+?
+- dział IT:
+	- odpowiada za infrastrukturę, m.in. połączenia z internetem wraz z powiązanymi systemami danych. 
+	- Ponadto za informacyjne systemy firmy np e-maile. 
+	- priorytetyzuje ochronę informacji
+- dział OT:
+	- odpowiada za zarządzanie i stan funkcjonujących systemów, monitoruje i kontroluje urządzenia (np przemysłowe, czy systemy SCADA) i ich procesy
+	-  priorytetyzuje ochronę pracowników i sprzętu
+Kiedyś były rozdzielne, obecnie ta granica się zaciera, bo OT zaczyna przejmować protokoły sieciowe IT, a IT coraz częściej wspiera wymagania operacyjne stosowane przez OT
+
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+1. Głównego celu
+![[Pasted image 20240111204717.png]]
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+2. Priorytetów
+![[Pasted image 20240111205000.png]]
+![[Pasted image 20240111204850.png]]
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+3. Typu ruchu sieciowego
+![[Pasted image 20240111205000.png]]
+![[Pasted image 20240111204858.png]]
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+4. Kontroli dostępu
+![[Pasted image 20240111205000.png]]
+![[Pasted image 20240111204910.png]]
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+5. Implikacji uszkodzonego urządzenia
+![[Pasted image 20240111205000.png]]
+![[Pasted image 20240111204918.png]]
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+6. Ochrony przed zagrożeniami
+![[Pasted image 20240111205000.png]]
+![[Pasted image 20240111204927.png]]
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+7. Aktualizacjami
+![[Pasted image 20240111205000.png]]
+![[Pasted image 20240111204936.png]]
+
+Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
+1. Głównego celu
+2. Priorytetów
+3. Typu ruchu sieciowego
+4. Kontroli dostępu
+5. Implikacji uszkodzonego urządzenia
+6. Ochrony przed zagrożeniami
+7. Aktualizacjami
+![[Pasted image 20240111204625.png|700]]
+
+Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy?
+![[Pasted image 20240111221518.png]]
+?
+**Sieć korporacyjna**
+ 5. **sieć korporacyjna** - aplikacje korporacyjne CRM, ERP, VPN, HGB, CBA, FBI, itd
+ 4. **sieć planowania biznesowego i logistyki** - systemy planowania, telefon, poczta e-mail, monitorowanie bezpieczeństwa, drukowania
+
+
+Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy?
+![[Pasted image 20240111221541.png]]
+?
+**Przemysłowa Strefa zdemilitaryzowana**
+	 **strefa zdemilitaryzowana** - stanowi bufor, w którym dane z sąsiednich poziomów mogę być współużytkowane, ale żaden ruch nie powinien przez nią przechodzić na drugą stronę  
+
+Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy?
+![[Pasted image 20240111221653.png]]
+?
+**Strefa operacyjna**
+3. **operacje i sterowanie** - monitorowanie i kontrolowanie systemu, planowanie produkcji, zapewnienie niezawodności, optymalizacja systemu, zarządzanie siecią w usługami IT z tym związanymi (DHCP, DNS)
+2. **Sterowanie nadzorcze** - administracja sieci/aplikacji systemu sterowania (w tym **HMI** (human-machine-interface)) i zbieranie danych 
+1. **Podstawowe sterowanie** - komunikacja kontrolerów, urządzeń **IED** (intelligent electronic device), i dedykowanych **HMI**
+0. Proces: urządzenia (czujniki, wykonawcze, napędy, roboty) komunikują się ze sterownikami lub terminalami **IED**
+*Jeśli się zastanawiasz czemu wszystkie są zaliczone do strefy operacyjnej, a na zdjęciu są rozdzielone to nwm, tak jest na wykładzie*
+
+Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy (jest ich 5)?
+![[Pasted image 20240111222047.png]]
+?
+**Strefa bezpieczeństwa**
+	**Krytyczne dla bezpieczeństwa** - zarządzanie bezpieczeństwem systemu sterowania za pomocą czujników i innego sprzętu
+
+
+Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy (jest ich 5)?
+![[Pasted image 20240111205427.png|700]]
+?
+**Sieć korporacyjna**
+ 5. **sieć korporacyjna** - aplikacje korporacyjne CRM, ERP, VPN, HGB, CBA, FBI, itd
+ 4. **sieć planowania biznesowego i logistyki** - systemy planowania, telefon, poczta e-mail, monitorowanie bezpieczeństwa, drukowania
+**Przemysłowa Strefa zdemilitaryzowana**
+	 **strefa zdemilitaryzowana** - stanowi bufor, w którym dane z sąsiednich poziomów mogę być współużytkowane, ale żaden ruch nie powinien przez nią przechodzić na drugą stronę  
+**Strefa operacyjna**
+3. **operacje i sterowanie** - monitorowanie i kontrolowanie systemu, planowanie produkcji, zapewnienie niezawodności, optymalizacja systemu, zarządzanie siecią w usługami IT z tym związanymi (DHCP, DNS)
+2. **Sterowanie nadzorcze** - administracja sieci/aplikacji systemu sterowania (w tym **HMI** (human-machine-interface)) i zbieranie danych 
+1. **Podstawowe sterowanie** - komunikacja kontrolerów, urządzeń **IED** (intelligent electronic device), i dedykowanych **HMI**
+0. Proces: urządzenia (czujniki, wykonawcze, napędy, roboty) komunikują się ze sterownikami lub terminalami **IED**
+**Strefa bezpieczeństwa**
+	**Krytyczne dla bezpieczeństwa** - zarządzanie bezpieczeństwem systemu sterowania za pomocą czujników i innego sprzętu
+
+
+
+Jakie są dobre praktyki w zakresie bezpieczeństwa IoT? 
+![[Pasted image 20240111222729.png|400]]
+?
+1. Używaj NaJNowszEgo systemu operacyjnego i bibliotek
+2. użyj sprzętu, który zawiera funkcje bezpieczeństwa i przestrzenie gdzie nie można wykonywać kodu
+3. stosuj kod zaciemniający (nic nieznaczący ale utrudniający reverse engineering)
+4. wybieraj hasła losowo (`stud`,`dupa123`, itd.)
+5. używaj mechanizmów typu Root of trust i bezpiecznego rozruchu, aby mieć 'złoty' obraz oprogramowania działającego na urządzeniu klienta
+6. wyeliminuj zakodowane hasła w obrazach ROM (read-only-memory)
+7. zamknij porty IP   
+8. używaj losowego układu przestrzeni adresowej, stosuj mechanizmy Stack Canaries oraz Guard bands 
+9. Używaj AUtmoMATycznyCH AKtuAliZacji 
+10. zaplanuj etap zakończenia eksploatacji (end-of-life) ⚰️✝️
+11. premiuj za znalezione błędy
+12. bierz udział w US-CERT aby na bieżąco dowiadywać się o exploitach i cyber-zagrożeniach
+
+
+
+
+
+
+
+
+
+
 
 
 
