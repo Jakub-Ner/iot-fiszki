@@ -1,0 +1,159 @@
+.kanban-plugin__board {
+  padding: 10px !important;
+}
+.kanban-plugin__lane-header-wrapper {
+  margin-bottom: 0px !important;
+  padding: 0px 11px 0 !important;
+}
+.kanban-plugin__grow-wrap > textarea,
+.kanban-plugin__grow-wrap::after,
+.kanban-plugin p,
+.kanban-plugin ul,
+.kanban-plugin ol,
+.kanban-plugin blockquote,
+.kanban-plugin pre,
+.kanban-plugin li {
+  font-size: 0.95rem !important;
+  font-family: "A Casual Handwritten Pen", cursive !important;
+  letter-spacing: 0em !important;
+  font-weight: 700 !important;
+  font-smoothing: subpixel-antialiased;
+}
+.kanban-plugin__item > .kanban-plugin__item-content-wrapper > .kanban-plugin__grow-wrap > textarea,
+.kanban-plugin__grow-wrap::after,
+.kanban-plugin p,
+.kanban-plugin ul,
+.kanban-plugin ol,
+.kanban-plugin blockquote,
+.kanban-plugin pre,
+.kanban-plugin li {
+  color: var(--text-lightbackground) !important;
+}
+.kanban-plugin__item-input {
+  background: rgba(0, 0, 0, 0.15);
+  border: 2px dashed black !important;
+  font-size: 13px !important;
+}
+.kanban-plugin__lane-grip > svg {
+  height: 1em !important;
+}
+.kanban-plugin__item a {
+  text-decoration: none !important;
+}
+
+.kanban-plugin a.tag {
+  font-size: 0.8em !important;
+  position: relative;
+  font-weight: 700 !important;
+  margin: 0 0.5em !important;
+}
+
+.kanban-plugin p > mark {
+    display: inline-block!important;
+    background-color: transparent;
+    position: relative;
+    color:var(--interactive-accent);
+    margin: 0 0.5em!important;
+}
+
+.kanban-plugin p > mark:before, 
+.kanban-plugin p > mark:after, 
+.kanban-plugin a.tag:before,
+.kanban-plugin a.tag:after{
+    position: absolute;
+    content:'';
+    top: 0;bottom: 0;
+    left:-0.5em;
+    right: -0.15em;
+    width: auto;
+    border-radius: 0.3em .3em 0.3em 0.3em!important;
+    white-space: pre-wrap;
+}
+.kanban-plugin p > mark:before, 
+.kanban-plugin a.tag:before{
+    background: currentColor;
+    transform: translateX(0.2em) skewX(-9deg);
+    opacity: 0.2;
+}
+.kanban-plugin p > mark:after, 
+.kanban-plugin a.tag:after{
+    background-image: 
+      linear-gradient(90deg, 
+        transparent 0%,
+        rgba(255,255,255,0.2) 20%,
+        transparent 30%,
+        rgba(255,255,255,.2) 50%,
+        transparent 70%,
+        rgba(255,255,255,0.2) 80%,
+        transparent 95%,
+        currentColor 100%
+      );
+      transform: translateX(0.2em) skewX(-9deg);
+      opacity: 0.5;
+}
+.kanban-plugin p > mark:before, 
+.kanban-plugin p > mark:after{
+    width: 100%!important;
+}
+
+.kanban-plugin__new-lane-button,
+.kanban-plugin__new-item-button {
+  background-color: var(--background-secondary) !important;
+  color: var(--text-faint) !important;
+  font-size: 0.9em !important;
+}
+.kanban-plugin__new-lane-button:hover,
+.kanban-plugin__new-item-button:hover {
+  color: var(--text-normal) !important;
+}
+.kanban-plugin__lane,
+.kanban-plugin__item,
+.kanban-plugin__item-content-wrapper {
+  border-radius: 2px !important;
+}
+.kanban-plugin__item-button-wrapper {
+  border: none !important;
+  padding: 10px 6px 6px !important;
+}
+.kanban-plugin__lane-title {
+  min-height: 5.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.kanban-plugin__new-lane-button {
+  border: none !important;
+  background-color: transparent !important;
+}
+.kanban-plugin__item {
+  margin-bottom: 6px !important;
+  box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.15);
+}
+@media (prefers-color-scheme: dark) {
+  .kanban-plugin__item {
+    box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.6);
+  }
+}
+.kanban-plugin {
+  --lane-width: 200px !important;
+}
+.kanban-plugin__lane-items {
+  padding: 2px !important;
+  margin: 4px !important;
+}
+.kanban-plugin__item-content-wrapper {
+  padding: 0.7em 0.9em !important;
+  min-height: calc(var(--lane-width) - 16px);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.075) 0%, rgba(0, 0, 0, 0.05) 20px, rgba(255, 255, 255, 0.1) 30px, rgba(0, 0, 0, 0.033)) !important;
+}
+.kanban-plugin__lane:nth-last-of-type(2) .kanban-plugin__item {
+  filter: opacity(0.4) grayscale(0.5) blur(1.5px);
+  transition: filter 0.5s ease-out;
+  transition-delay: 0.5s;
+}
+.kanban-plugin__lane:nth-last-of-type(2):hover .kanban-plugin__item {
+  filter: unset;
+  transition: filter 0.25s ease-in;
+  transition-delay: 1s;
+}

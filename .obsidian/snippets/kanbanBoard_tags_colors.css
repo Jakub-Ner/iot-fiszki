@@ -1,0 +1,60 @@
+.tag {
+  display: inline !important;
+}
+.tag:not(.token) {
+  border: none !important;
+  font-size: 0.8em !important;
+  line-height: 1.6em !important;
+  padding: 0px 0px 1px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  margin: 0px 2px !important;
+  cursor: pointer !important;
+  font-weight: 500 !important;
+  border-radius: 0.8em !important;
+  color: var(--text-faint) !important;
+  position: relative;
+  top: -1px;
+}
+.CodeMirror-line span.cm-hashtag-end.cm-meta {
+  color: inherit !important;
+  text-decoration: none;
+  color: var(--text-accent-hover) !important;
+  font-weight: 500 !important;
+  border-radius: 3px !important;
+}
+.CodeMirror-line span.cm-hashtag-end:before {
+  content: "#";
+}
+.CodeMirror-line span.cm-hashtag-begin {
+  display: none;
+}
+.tag:not(.token):hover {
+  filter: brightness(1.15);
+}
+/*Colors*/
+.tag[href^="#red"]:not(.token),
+.CodeMirror-line span.cm-hashtag-end.cm-tag-red {
+  color: rgba(225, 25, 25, 1) !important;
+}
+.tag[href^="#green"]:not(.token),
+.CodeMirror-line span.cm-hashtag-end.cm-tag-green {
+  color: rgb(100, 200, 100) !important;
+}
+.tag[href^="#blue"]:not(.token),
+.CodeMirror-line span.cm-hashtag-end.cm-tag-blue {
+  color: rgb(0, 200, 200) !important;
+}
+.tag[href^="#orange"]:not(.token),
+.CodeMirror-line span.cm-hashtag-end.cm-tag-orange {
+  color: rgba(255, 125, 0, 1) !important;
+}
+.tag[href^="#purple"]:not(.token),
+.CodeMirror-line span.cm-hashtag-end.cm-tag-purple {
+  color: rgb(145, 120, 175) !important;
+}
+.tag[href^="#pink"]:not(.token),
+.CodeMirror-line span.cm-hashtag-end.cm-tag-purple {
+  color: rgb(225, 25, 150) !important;
+}

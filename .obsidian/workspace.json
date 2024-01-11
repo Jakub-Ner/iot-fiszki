@@ -1,0 +1,250 @@
+{
+  "main": {
+    "id": "f1d55986ec403eb9",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4da4dc413dfc0f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80562864aad9d503",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Iot Fiszki.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "65ad3c5cf750ac90",
+    "type": "split",
+    "children": [
+      {
+        "id": "6cd1cd04a6cfc9a5",
+        "type": "tabs",
+        "dimension": 73.95833333333333,
+        "children": [
+          {
+            "id": "e059dffdfa6a7b92",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "242d0b3e5a6fb396",
+        "type": "tabs",
+        "dimension": 26.041666666666664,
+        "children": [
+          {
+            "id": "c3a486f6ad106f65",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "hemody",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a6199b44a195f23c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "2c8dc45a2c2004ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "86a5ff8c6dd16be4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5dcc1f55654c328",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Iot Fiszki.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "33677f6eae081ebf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bba8cceba3f0c465",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Iot Fiszki.md"
+              }
+            }
+          },
+          {
+            "id": "e6ff3e1049e6fe24",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "aadadd1f95f3f0c4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Iot Fiszki.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e832b817d0d1aa6e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "891674f3c488f0b1",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Iot Fiszki.md"
+              }
+            }
+          },
+          {
+            "id": "b0420979ac2919f5",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": true,
+      "command-palette:Open command palette": false,
+      "templates:Insert template": true,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "terminal:Open terminal": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-extract-pdf-highlights:PDF Highlights": false
+    }
+  },
+  "active": "e059dffdfa6a7b92",
+  "lastOpenFiles": [
+    "FILES/Pasted image 20231229160636.png",
+    "FILES/Pasted image 20231223185029.png",
+    "FILES/Belczyk_266897_IPSv2.pdf",
+    "FILES/Pasted image 20240110110126.png",
+    "FILES/Pasted image 20240109115249.png",
+    "FILES/Pasted image 20240110105606.png",
+    "FILES/Pasted image 20240109112618.png",
+    "FILES/Pasted image 20240109112411.png",
+    "FILES/Pasted image 20240106173823.png",
+    "FILES/Pasted image 20240106175615.png",
+    "FILES/Pasted image 20240109105913.png",
+    "FILES/Pasted image 20240109111517.png",
+    "Iot Fiszki.md",
+    "FILES/regulamin-bankuj-mobilnie-10-edycja (2).pdf",
+    "tmp.canvas",
+    "LA Ner.pdf",
+    "ZETTELKASTEN/lekcje fizyki.md",
+    "PWr/Android.md",
+    "ZETTELKASTEN/event-related design paradigm.md",
+    "ZETTELKASTEN/transduction.md",
+    "ZETTELKASTEN/neurotransmitter.md",
+    "ZETTELKASTEN/hemodynamics.md",
+    "ZETTELKASTEN/astrocytes (astroglia).md",
+    "ZETTELKASTEN/epithelium.md",
+    "ZETTELKASTEN/bloom's taxonomy.md",
+    "private/Electrodermal Activity - real life scenario.md",
+    "PWr/readme.md",
+    "phone/Fraś.md",
+    "PWr/files/Cw06b-eng.pdf",
+    "FILES/PDFs/slajdy13.pdf",
+    "PWr/files/ampa03c.pdf",
+    "PWr/files/Cw01g.pdf",
+    "PWr/files/Unconfirmed 738178.crdownload",
+    "PWr/files/Ex0f_kotlin.pdf",
+    "PWr/files/Unconfirmed 227056.crdownload",
+    "phone/Unicorn.md",
+    "private/mHack.md",
+    "ZETTELKASTEN/neuron.md",
+    "phone/Prezenty.md",
+    "PWr/IoT.md",
+    "PWr/Inżynieria systemów baz danych L.md",
+    "Excalidraw/Drawing 2024-01-09 14.27.07.excalidraw.md",
+    "PWr/Projektowanie oprogramowania W.md",
+    "ZETTELKASTEN/swagger.md",
+    "ZETTELKASTEN/The Bills.md",
+    "Excalidraw/Drawing 2023-10-28 19.44.53.excalidraw.md",
+    "ZETTELKASTEN/[TLDR] EEG-Based BCI Emotion Recognition A Survey 2015_2020.md"
+  ]
+}

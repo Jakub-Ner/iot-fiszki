@@ -1,0 +1,36 @@
+{
+  "addToCommand": true,
+  "addToContextMenu": true,
+  "createInstanceNearExistingOnes": true,
+  "errorNoticeTimeout": 0,
+  "exposeInternalModules": true,
+  "focusOnNewInstance": true,
+  "hideStatusBar": "focused",
+  "language": "",
+  "newInstanceBehavior": "newHorizontalSplit",
+  "noticeTimeout": 5,
+  "openChangelogOnUpdate": true,
+  "pinNewInstance": false,
+  "preferredRenderer": "webgl",
+  "profiles": {
+    "linuxIntegratedDefault": {
+      "args": [],
+      "executable": "/bin/bash",
+      "name": "Build-in",
+      "platforms": {
+        "darwin": true,
+        "linux": true
+      },
+      "pythonExecutable": "python3",
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
+      "type": "integrated",
+      "useWin32Conhost": true
+    }
+  }
+}

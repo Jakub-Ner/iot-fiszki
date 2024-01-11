@@ -1,0 +1,9 @@
+{
+  "overrideViewsFromOtherPlugins": false,
+  "extensions": [
+    "py",
+    "gitignore",
+    "js",
+    "cpp"
+  ]
+}

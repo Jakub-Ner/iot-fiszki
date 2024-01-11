@@ -1,0 +1,11 @@
+{
+  "accentColor": "",
+  "nativeMenus": false,
+  "cssTheme": "Typewriter",
+  "baseFontSize": 20,
+  "enabledCssSnippets": [
+    "outer_li"
+  ],
+  "showViewHeader": false,
+  "theme": "obsidian"
+}

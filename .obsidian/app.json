@@ -1,0 +1,24 @@
+{
+  "showUnsupportedFiles": true,
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "ZETTELKASTEN",
+  "attachmentFolderPath": "FILES",
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "CODE/"
+  ],
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 54
+  },
+  "propertiesInDocument": "visible",
+  "tabSize": 6,
+  "readableLineLength": false,
+  "showLineNumber": true,
+  "showInlineTitle": false,
+  "strictLineBreaks": false
+}

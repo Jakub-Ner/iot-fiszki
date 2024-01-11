@@ -1,0 +1,18 @@
+{
+  "menuCommands": [],
+  "hideTitles": [
+    "Source mode",
+    "Find...",
+    "Open link",
+    "Open in new tab",
+    "Open to the right",
+    "Cut",
+    "Copy",
+    "Paste",
+    "Paste as plain text",
+    "Select all",
+    "Open in terminal: Select",
+    "Open in terminal: External",
+    "Add external link"
+  ]
+}
