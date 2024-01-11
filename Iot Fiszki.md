@@ -395,7 +395,6 @@ Opisz zasadę działania wyświetlacza LCD.
 ![[Pasted image 20231230123015.png]]
 
 
-
 ## Sensory, elementy sygnalizacyjne i wykonawcze 06
 
 Czym jest przetwornik?
@@ -676,6 +675,47 @@ Opisz topologię LoRaWAN
 
 ## Protokół IP w warstwie sieciowej Internetu Rzeczy 09
 
+
+Wymień zalety protokołu IP (jest ich 8).
+![[Pasted image 20240111234301.png|400]]
+?
+1. Otwarty i oparty na standardach
+2. Wszechstronny
+3. Wszechobecny, bo *'Warstwowa architektura IP jest dobrze przygotowana, aby poradzić sobie z każdym rodzajem warstw ﬁzycznych i łącza danych'*
+4. Skalowalny
+5. Zarządzalny i bezpieczny
+6. Stabilny i odporny, istnieje już 30 lat i jest zajebisty (również w sektorach finansowych i obronnych)
+7. Przyjęty na rynku konsumenckim
+8. Jest czynnikiem zwiększającym innowacyjność
+
+Czym są adaptacja 🤡 i adopcja 🐶 w kontekście IP?
+![](https://www.youtube.com/watch?v=nvSKfN6_6eM)
+?
+- **adaptacja** - implementacja bramy warstwy aplikacji, aby zapewnić translację między warstwami innymi niż IP oraz IP
+- **adopcja** - zastąpienie wszystkich warstw innych niż IP ich odpowiednikami IP, upraszczając model wdrażania i operacje
+
+Kiedy adoptować a kiedy adaptować?
+?
+W przypadku bardzo ograniczonych zasobowo urządzeń adaptacja. W pozostałych adopcja.
+
+Jakie nowości wprowadza IPv6?
+![[Pasted image 20240112000938.png|400]]
+?
+![[Pasted image 20240112003842.png]]
+
+| cecha                                                                                                                                       | IPv4                                 | IPv6      |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | --------- |
+| adresowanie                                                                                                                                 | 32 bity                              | 128 bitów |
+| nagłówek zoptymalizowany do przetwarzania                                                                                                   | 32 b                                 | 64 b      |
+| rozmiar nagłówka                                                                                                                            | 20 B                                 | 40 B      |
+| nagłówek Internet Header Length (**IHL**)                                                                                                   | <span style="color:#ff0000">X</span> | ✔️        |
+| flow label - pakiety które są częścią tego samego strumienia, mają tę samą etykietę i są łatwo rozpoznawalne bez wchodzenia w ich zawartość | <span style="color:#ff0000">X</span> | ✔️        |
+| ...                                                                                                                                         | TTL                                  | Hop limit |
+| długość source Address i destination adress                                                                                                 | 32 b                                 | 128 b     |
+| wymagana wielkość obsługi pakietu                                                                                                           | 68 B                                 | 1280 B    |
+| optymalizacja nagłówka                                                                                                                                            | <span style="color:#ff0000">X</span>                                     | ✔️          |
+
+
 ## Protokoły aplikacyjne w Internecie Rzeczy 10
 
 UWAGA :: W Wykładzie 10 określenie sensor odnosi się również do elementów wykonawczych
@@ -690,6 +730,7 @@ Czy sensory mogą się komunikować z serwerem?
 ?
 Szyfrowana implementacja protokółu TCP/IP lub UDP jest ciężka (objętościowo i obliczeniowo). Dodatkowo byłoby to raczej bez sensu, głupie pytanie.  
 ![[Pasted image 20240105010104.png|700]]
+![[Pasted image 20240112003542.png]]
 
 | Transmission Control Protocol                                                                                     | User Datagram Protocol                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -697,7 +738,7 @@ Szyfrowana implementacja protokółu TCP/IP lub UDP jest ciężka (objętościow
 | dodaje 20 bajtów ramki                                                                                            | dodaje tylko 8 bajtów ramki                                                                                               |
 | sieci o niskiej mocy i stratne (Low-Power and Lossy-Network) mogą sobie nie radzić w przypadku dużej liczby sesji | większość protokołów aplikacji przemysłowych było wdrażane gdy łącza były zawodne, dlatego TCP/IP jest tam popularniejszy |
 |                                                                                                                   | transmisja mutlicast wykorzystuje UDP                                                                                                                           |
-
+`
 Wymień metody transportu aplikacji IoT.
 ?
 - **UDP**
@@ -707,7 +748,6 @@ Wymień metody transportu aplikacji IoT.
 - Protokoły internetowe - Ethernet, WiFi, 4G/LTE
 - Constrained Application Protocol (**CoAP**)
 - **MQTT**
-
 
 
 Czy sensor może być serwerem?
@@ -907,36 +947,43 @@ Kiedyś były rozdzielne, obecnie ta granica się zaciera, bo OT zaczyna przejmo
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
 1. Głównego celu
+?
 ![[Pasted image 20240111204717.png]]
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
 2. Priorytetów
+?
 ![[Pasted image 20240111205000.png]]
 ![[Pasted image 20240111204850.png]]
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
 3. Typu ruchu sieciowego
+?
 ![[Pasted image 20240111205000.png]]
 ![[Pasted image 20240111204858.png]]
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
 4. Kontroli dostępu
+?
 ![[Pasted image 20240111205000.png]]
 ![[Pasted image 20240111204910.png]]
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
 5. Implikacji uszkodzonego urządzenia
+?
 ![[Pasted image 20240111205000.png]]
 ![[Pasted image 20240111204918.png]]
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
 6. Ochrony przed zagrożeniami
+?
 ![[Pasted image 20240111205000.png]]
 ![[Pasted image 20240111204927.png]]
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
 7. Aktualizacjami
 ![[Pasted image 20240111205000.png]]
+?
 ![[Pasted image 20240111204936.png]]
 
 Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekście:
@@ -947,6 +994,7 @@ Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekśc
 5. Implikacji uszkodzonego urządzenia
 6. Ochrony przed zagrożeniami
 7. Aktualizacjami
+?
 ![[Pasted image 20240111204625.png|700]]
 
 Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy?
