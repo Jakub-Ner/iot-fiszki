@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "f0c89b1eb043acac",
+        "id": "cfec9e24a85506c5",
         "type": "split",
         "children": [
           {
@@ -40,11 +40,11 @@
             ]
           },
           {
-            "id": "a1fcd4704ba00243",
+            "id": "2951931eaafbfffc",
             "type": "tabs",
             "children": [
               {
-                "id": "c8e6ec0f6cfc0f2c",
+                "id": "3166425c0f64ac5e",
                 "type": "leaf",
                 "state": {
                   "type": "terminal:terminal",
@@ -72,8 +72,8 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 207,
-                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git add",
+                        "columns": 97,
+                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git status\r\nOn branch ner\r\nYour branch is up to date with 'origin/ner'.\r\n\r\nChanges to be committed:\r\n  (use \"git restore --staged <file>...\" to unstage)\r\n\u001b[8C\u001b[32mmodified:   .obsidian/workspace.json\r\n\u001b[8Cnew file:   FILES/Pasted image 20240111234301.png\r\n\u001b[8Cnew file:   FILES/Pasted image 20240111235058.png\r\n\u001b[8Cnew file:   FILES/Pasted image 20240112000938.png\r\n\u001b[8Cnew file:   FILES/Pasted image 20240112003408.png\r\n\u001b[8Cnew file:   FILES/Pasted image 20240112003542.png\r\n\u001b[8Cnew file:   FILES/Pasted image 20240112003842.png\r\n\u001b[8Cmodified:   Iot Fiszki.md\r\n\r\n\u001b[0mChanges not staged for commit:\r\n  (use \"git add <file>...\" to update what will be committed)\r\n  (use \"git restore <file>...\" to discard changes in working directory)\r\n\u001b[8C\u001b[31mmodified:   .obsidian/workspace.json\r\n\r\n\r\n\u001b[0m(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git add ",
                         "rows": 30
                       }
                     }
@@ -239,7 +239,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,19 +256,19 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "c8e6ec0f6cfc0f2c",
+  "active": "3166425c0f64ac5e",
   "lastOpenFiles": [
     "Iot Fiszki.md",
+    "FILES/Pasted image 20240112003842.png",
+    "FILES/Pasted image 20240112003542.png",
+    "FILES/Pasted image 20240112003408.png",
+    "FILES/Pasted image 20240112000938.png",
+    "FILES/Pasted image 20240111235058.png",
+    "FILES/Pasted image 20240111234301.png",
     "FILES/Pasted image 20240111224938.png",
     "FILES/Pasted image 20240111224741.png",
     "FILES/Pasted image 20240111224654.png",
     "FILES/Pasted image 20240111222729.png",
-    "FILES/Pasted image 20240111222047.png",
-    "FILES/Pasted image 20240111221653.png",
-    "FILES/Pasted image 20240111221601.png",
-    "FILES/Pasted image 20240111221541.png",
-    "FILES/Pasted image 20240111221518.png",
-    "FILES/Pasted image 20240111205719.png",
     "FILES/Belczyk_266897_IPSv2.pdf",
     "FILES/regulamin-bankuj-mobilnie-10-edycja (2).pdf",
     "tmp.canvas",
