@@ -1,8 +1,8 @@
 {
   "accentColor": "",
   "nativeMenus": false,
-  "cssTheme": "Typewriter",
-  "baseFontSize": 20,
+  "cssTheme": "AnuPpuccin",
+  "baseFontSize": 15,
   "enabledCssSnippets": [
     "outer_li"
   ],
