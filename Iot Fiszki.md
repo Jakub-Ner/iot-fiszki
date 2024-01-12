@@ -716,6 +716,75 @@ Jakie nowości wprowadza IPv6?
 | optymalizacja nagłówka                                                                                                                                            | <span style="color:#ff0000">X</span>                                     | ✔️          |
 
 
+Gdzie umieszczana jest warstwa adaptacyjna (między którymi warstwami)?
+?
+![[Pasted image 20240112130337.png|400]]
+Jaki protokół opisuje w jaki sposób enkapsulowany jest IPv4 w ramce Ethernet? A jaki mówi o IPv6?
+- RFC 894
+- RFC 2464
+?
+- RFC 894 - IPv4
+- RFC 2464 - IPv6
+
+Czym jest 6LoWPAN?
+?
+Warstwa adaptacyjna zoptymalizowana pod kątem transmisji IPv6 stworzona dla ograniczonych węzłów.
+![[Pasted image 20240112130947.png|400]]
+
+Czym jest opcja ustalania osiągalności i przesyłania pakietów "mesh-under"?
+?
+W niej routing jest obsługiwany w warstwie adaptacyjnej 6LoWPAN
+
+Czym jest opcja ustalania osiągalności i przesyłania pakietów "mesh-over" ("route-over")?
+?
+W niej routing IP dostarcza pakiety do miejsca docelowego
+
+Jak działa IPv6 routing Protocol for Low Power and Lossy Network (**RPL**)?
+?
+Każdy węzeł działa jak router i staje się częścią sieci (mesh). Routing odbywa się w warstwie IP. Każdy węzeł sprawdza odebrany pakiet i określa miejsce docelowe następnego przeskoku. żadne informacje z warstwy MAC nie są potrzebne, dlatego nazwa mesh-over-routing.
+Aby poradzić sobie z ograniczeniami pamięciowymi i obliczeniowymi stosowane są dwa tryby:
+- **z przechowywaniem** - wszystkie węzły zawierają pełną tablice routingu RPL, każdy wie, jak bezpośrednio dotrzeć do każdego węzła
+- **bez przechowywania** - tylko graniczne routery zawierają pełną tablicę routingu. Pozostałe posiadają tylko adresy rodziców 
+
+
+Na czym polega acykliczność RPL?
+?
+RPL opiera się na skierowanym grafie acyklicznym zorientowanym na miejsce docelowe (DODAG) - z dowolnego wierzchołka nie można podążać wzdłuż łuków z powrotem do tego samego punktu. Dodatkowo miejsce docelowe występuje na routerze granicznym jako root DODAG . 
+![[Pasted image 20240112132707.png|400]]
+
+
+Ilu rodziców ma węzeł w DODAG?
+?
+Trzech. Zapewniają oni ścieżkę do korzenia. Zazwyczaj jeden z rodziców jest preferowany.
+
+Jak są konfigurowane trasy w IPv6 routing Protocol for Low Power and Lossy Network (RPL)?
+![[Pasted image 20240112133500.png|400]]
+?
+Trasy w górę są wykrywane i konfigurowane za pomocą DAG Information Object (**DIO**). Mówią one węzłom, kto jest ich rodzicem i określają najlepszą ścieżkę do katalogu głównego DODAG. Węzły ustalają trasy w dół ogłaszając swoich rodziców za pomocą Destination Advertising Object (**DAO**) - komunikaty te informują rodziców o obecności dzieci
+![[Pasted image 20240112133636.png|400]]
+
+Jak działa funkcja celu (**OF**) RFC 6719 minimalnej oczekiwanej liczby transakcji (**METX**)?
+?
+Rodzice pakują wartość **METX** do DIO i dziecko wybiera minimalną wartość (najlepszego rodzica)
+
+Czym jest ranga w DODAG?
+![[Pasted image 20240112133636.png|400]]
+?
+Jest przybliżeniem tego jak blisko węzeł jest od roota i pomaga uniknąć problemu zliczania w nieskończoność. Węzły mogą:
+- zwiększyć swoją rangę tylko po otrzymaniu **DIO** z większym numerem wersji. 
+- obniżyć rangę, o ile ustaliły tańszą trasę
+
+Jakie są dostępne metryki dla RPL (jest ich 8)?
+?
+1. **Expected Transmission Count (ETX)**: Przypisuje wartość dyskretną liczbie transmisji, których wykonania oczekuje węzeł w celu dostarczenia pakietu.
+2. **Hop Count**: Śledzi liczbę węzłów przechodzących w ścieżkę. Zazwyczaj ścieżka o niższej liczbie przeskoków jest bardziej preferowana od ścieżki o wyższej liczbie przeskoków.
+3. Latency: Różni się w zależności od oszczędzania energii. Preferowane są ścieżki o niższym opóźnieniu.
+4. **Link Quality Level**: Mierzy niezawodność łącza, biorąc pod uwagę poziomy błędów pakietów spowodowane czynnikami takimi jak tłumienie sygnału i interferencje.
+5. **Link Color**: Umożliwia ręczny wpływ przez administracyjne na routing poprzez ustawienie wartości, aby łącze było mniej lub bardziej pożądane. Wartości te można dostosować statycznie lub dynamicznie do określonych rodzajów ruchu.
+6. **Node State and Attribute**: Identyﬁkuje węzły, które działają jako agregatory ruchu i węzły, na które wpływ mają duże obciążenia. Wysokie obciążenia mogą wskazywać na węzły, które miały wysoki stan obciążania procesora lub pamięci. Oczywiście węzły będące agregatorami są preferowane w porównaniu z węzłami mocno obciążonymi.
+7. **Node Energy**: Pozwala unikać węzłów o niskiej mocy, więc można uniknąć węzła zasilanego bateryjnie, w którym brakuje energii, i żywotność tego węzła i sieci można wydłużyć.
+8. **Throughput**: Podaje wielkość przepustowości łącza węzła. Często węzły oszczędzające energię wykorzystują mniejszą przepustowość. Ta metryka umożliwia ustalanie priorytetów ścieżek o wyższej przepustowości.
+
 ## Protokoły aplikacyjne w Internecie Rzeczy 10
 
 UWAGA :: W Wykładzie 10 określenie sensor odnosi się również do elementów wykonawczych
