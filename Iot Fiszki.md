@@ -25,7 +25,7 @@ Wymień rodzaje sieci wchodzące w skład IoT.
 
 Gdzie można zarządzać danymi?
 ?
-![[Pasted image 20240106173823.png|400]]
+![[Pasted image 20240106173823.png]]
 - Chmura (**Cloud**) - chmura lub centralne centrum danych, 
 - Mgła (**Fog**) - bramy i sieć tranzytowa,
 - Krawędź (**Edge**) - w czujnikach.
@@ -154,7 +154,7 @@ Programowanie urządzenia w ramach instalacji całego systemu, a nie osobno każ
 Co umożliwia **JTAG** (Joint Test Action Group)?
 ?
 Programowanie wielu urządzeń
-![[Pasted image 20231223185029.png|700]]
+![[Pasted image 20231223185029.png]]
 
 
 Inne interface'y: PDI, TPI, UPDI.
@@ -176,7 +176,7 @@ Czym jest **SRAM**?
 Static Random-Access Memory, pamięć ulotna
 
 Czym jest **EEPROM**?
-![[Pasted image 20240111224938.png|400]]
+![[Pasted image 20240111224938.png]]
 ?
 Electrically Erasable Programmable Read-Only Memory. Podobny do pamięci Flash ale można w nim czyścić pojedynczy bajt. Wolniejszy ale prostszy w użyciu 
 
@@ -252,7 +252,7 @@ Czym jest przerwanie?
 Zasygnalizowana zmiana lub osiągnięcie stanu opisanego przez warunek (np. zmiana stanu na pinie) przerwania. Cechują się priorytetami. Na ich podstawie kontroler CPUINT decyduje, które przerwanie należy obsłużyć, a które musi poczekać. CPUINT ustawia licznik programu, tak aby wskazywał skok do procedury obsługi przerwania (tzw. wektor przerwania). Po zakończeniu procedury, wykonanie programu wznawiane jest od miejsca gdzie zostało przerwane.
 
 Czym jest system zdarzeń (**EVSYS**) i do czego służy?
-![[Pasted image 20240111224741.png|700]]
+![[Pasted image 20240111224741.png]]
 ?
 Pozwala podsystemom (urządzeniom peryferyjnym) lub programowi komunikować się bezpośrednio (z pominięciem CPU) poprzez konfigurowalną sieć routingu zdarzeń. 
 
@@ -265,17 +265,17 @@ Licznik zliczający od 0 wzwyż, do momentu "przekręcenia" się licznika. Zlicz
 Do czego służy Pulse Width Modulation (**PWM**)?
 ?
 Służy do regulacji urządzenia (np. jasność świecenia diody, prędkość obrotu silnika) poprzez modulację prądu lub napięcia (tzw. zmiana wypełnienia sygnału)
-![[Pasted image 20231229142738.png|700]]
+![[Pasted image 20231229142738.png]]
 
 Czym charakteryzuje się modulacja PWM z **wykorzystaniem jednego zbocza**?
 ?
 CMPn - Compare register
 W0n - Waveform
-![[Pasted image 20231229142425.png|700]]
+![[Pasted image 20231229142425.png]]
 
 Czym charakteryzuje się PWM w trybie pojedynczego narastania?
 ?
-![[Pasted image 20231229142532.png|700]]
+![[Pasted image 20231229142532.png]]
 
 
 Jak działa **RTC** (Real Time Counter)?
@@ -286,7 +286,7 @@ RTC zlicza cykle zegarowe w **CNT** (counter register) i porównuje to z period 
 Do czego służy komparator?
 ?
 Do porównania dwóch sygnałów analogowych (napięć)
-![[Pasted image 20231229144127.png|400]]
+![[Pasted image 20231229144127.png]]
 
 Wymień parametry odchyleń pomiarów - rodzaje błędów:
 ?
@@ -299,19 +299,19 @@ Wymień parametry odchyleń pomiarów - rodzaje błędów:
 
 Jak wygląda błąd przesunięcia?
 ?
-![[Pasted image 20231229160515.png|400]]
+![[Pasted image 20231229160515.png]]
 
 Jak wygląda błąd wzmocnienia?
 ?
-![[Pasted image 20231229160656.png|400]]
+![[Pasted image 20231229160656.png]]
 
 Jak wygląda Nieliniowość skumulowana?
 ?
-![[Pasted image 20231229160636.png|400]]
+![[Pasted image 20231229160636.png]]
 
 Jak wygląda błąd Nieliniowość różnicowa?
 ?
-![[Pasted image 20231229160722.png|400]]
+![[Pasted image 20231229160722.png]]
 
 Na czym polega błąd Błąd kwantyzacji?
 ?
@@ -352,17 +352,17 @@ Jakie są rodzaje przełączników?
 - double-pole double-throw
 - normally open
 - normally close
-  ![[Pasted image 20231229163820.png|400]] ![[Pasted image 20231229165423.png|400]]
+  ![[Pasted image 20231229163820.png]] ![[Pasted image 20231229165423.png]]
 
 Czym jest potencjometr?
 ?
 Trójwyprowadzeniowym rezystorem - dzielnikiem napięcia. Położenie trzeciej elektrody reguluje się przez obrót osi lub przesunięcie suwaka. Dostarcza sygnału analogowego
-![[Pasted image 20231229170404.png|700]]
+![[Pasted image 20231229170404.png]]
 
 Jaka jest przewaga enkodera nad potencjometrem?
 ?
 Enkoder dostarcza sygnału, który może być traktowany jako cyfrowy, dzięki temu nie wymaga przetwornika ADC. Jednak programista musi obsłużyć zdarzenia związane ze zmianą stanów wyjść enkodera.
-![[Pasted image 20231229171020.png|500]]
+![[Pasted image 20231229171020.png]]
 *Enkoder Kwadraturowy*
 
 Czym jest buzzer?
@@ -465,20 +465,20 @@ Jak mogą być zasilane silniki?
 	- sieć energetyczna
 	- falowniki
 	- generatory elektryczne
-![[Pasted image 20240102145244.png|700]]
+![[Pasted image 20240102145244.png]]
 
 
 Jaka właściwość silnika krokowego powoduje, że jest wykorzystywany tam gdzie wymagana jest precyzja (np druk 3d)?
 ?
 Silnik krokowy dzieli pełny obrót na kilka kroków. Pozwala to wymusić i przytrzymać pozycję silnika bez czujników położenia i sprzężenia zwrotnego
-![[Pasted image 20240102150234.png|400]]
+![[Pasted image 20240102150234.png]]
 
 
 
 Czym jest Serwomechanizm?
 ?
 Mały, tani siłownik używany do sterowania radiowego i robotyki na małą skalę
-![[Pasted image 20240102150643.png|400]]
+![[Pasted image 20240102150643.png]]
 
 
 ## Interfejsy komunikacji lokalnej i magistrale urządzeń Internetu Rzeczy 07
@@ -512,15 +512,15 @@ Jakie wyróżniamy parametry portu szeregowego?
 - **bity danych** - endianness (LSB lub MSB) muszą być zgodne
 - **parzystość** - do wykrywania błędów transmisji, do znaku danych wysyłany jest dodatkowy bit, tak aby suma bitów była zawsze parzysta (**E**ven) lub nieparzysta (**O**dd)
 - **bity stopu** - do synchronizacji, na końcu znaku umieszczają 
-![[Pasted image 20240104002532.png|800]]
+![[Pasted image 20240104002532.png]]
 
 
 
 Czym jest magistrala **UART**?
-![[Pasted image 20240109112411.png|400]]
+![[Pasted image 20240109112411.png]]
 ?
 Universal Asynchronous Receiver-Transmitter - serial asynchroniczny, czyli taki, który nie musi współdzielić sygnału zegarowego do synchronizacji nadajnika i odbiornika. Synchronizacja polega na identyfikacji początku transmisji każdego bajtu w przewodzie. Gdy nie ma transmisji, magistrala jest w stanie bezczynności. Jest to przykład pełnego dupleksu.
-![[Pasted image 20240104143133.png|700]]
+![[Pasted image 20240104143133.png]]
 
 
 Rozszyfruj poniższe ustawienia:
@@ -536,7 +536,7 @@ Opisz magistralę SPI.
 Serial Peripheral Interface - serial w którym (master) współdzieli magistralę z niewolnikami. Wybiera do kogo będzie inicjował komunikację poprzez protokół Select-Slave (SS ![[Pasted image 20240104144447.png|28]]). Niewolnicy nie mogą wysyłać danych jeśli pan/i nie spyta. Jest to przykład pełnego dupleksu.
 
 Opisz rolę portów Serial Peripheral Interface (SPI):
-![[Pasted image 20240104144601.png|700]]
+![[Pasted image 20240104144601.png]]
 ?
 - GPIO - inicjacja i kończenie komunikacji
 - MOSI - Master Output Slave Input
@@ -560,17 +560,17 @@ Universal Serial Bus - protokół działający w trybie host-device, z jednym ki
 Co jest wyjątkowe w magistrali Dallas-Maxim 1 Wire?
 ?
 Pozwala na komunikację (single-master, multi slave) ze zdalnym urządzeniem za pomocą tylko jednego przewodu! W praktyce wykorzystuje się dwa lub trzy xd
-![[Pasted image 20240104155959.png|700]]
+![[Pasted image 20240104155959.png]]
 
 
 czym magistrala **CAN** (jest Controller Area Network)
-![[Pasted image 20240104160042.png|700]]
+![[Pasted image 20240104160042.png]]
 ?
 Półdupleksowa, multi-master, multi-slave, asynchroniczna szeregowa magistrala
 
 
 Wymień warstwy sieci (modele ISO/OSI i TCP/IP)
-![[Pasted image 20240104162126.png|700]]
+![[Pasted image 20240104162126.png]]
 
 
 ## Technologie bezprzewodowe dla Internetu Rzeczy 08
@@ -668,7 +668,7 @@ Wymień stosy protokołów bazujące na 802.**15.4**.
 - ZigBee 
 - 6LoWPAN
 - WirelessHart
-![[Pasted image 20240112142245.png|400]]
+![[Pasted image 20240112142245.png]]
 
 Opisz IEEE 1901.2a.
 ?
@@ -681,7 +681,7 @@ Przykłady użycia:
 
 
 Opisz IEEE 802.**11ah**.
-![[Pasted image 20240112141600.png|400]]
+![[Pasted image 20240112141600.png]]
 ?
 Wykorzystywana w sieciach bez ograniczeń. Służy do podłączania punktów końcowych (np węzłów obliczeniowych (mgły)), czujników o dużej szybkości transmisji danych oraz urządzenia do analizy audio i wideo. Przykłady użycia:
 - czujniki i mierniki obejmujące inteligentną siatkę
@@ -714,7 +714,7 @@ Opisz topologię LoRaWAN
 
 
 Wymień zalety protokołu IP (jest ich 8).
-![[Pasted image 20240111234301.png|400]]
+![[Pasted image 20240111234301.png]]
 ?
 1. Otwarty i oparty na standardach
 2. Wszechstronny
@@ -736,7 +736,7 @@ Kiedy adoptować a kiedy adaptować?
 W przypadku bardzo ograniczonych zasobowo urządzeń adaptacja. W pozostałych adopcja.
 
 Jakie nowości wprowadza IPv6?
-![[Pasted image 20240112000938.png|400]]
+![[Pasted image 20240112000938.png]]
 ?
 ![[Pasted image 20240112003842.png]]
 
@@ -755,7 +755,7 @@ Jakie nowości wprowadza IPv6?
 
 Gdzie umieszczana jest warstwa adaptacyjna (między którymi warstwami)?
 ?
-![[Pasted image 20240112130337.png|400]]
+![[Pasted image 20240112130337.png]]
 Jaki protokół opisuje w jaki sposób enkapsulowany jest IPv4 w ramce Ethernet? A jaki mówi o IPv6?
 - RFC 894
 - RFC 2464
@@ -766,7 +766,7 @@ Jaki protokół opisuje w jaki sposób enkapsulowany jest IPv4 w ramce Ethernet?
 Czym jest 6LoWPAN?
 ?
 Warstwa adaptacyjna zoptymalizowana pod kątem transmisji IPv6 stworzona dla ograniczonych węzłów.
-![[Pasted image 20240112130947.png|400]]
+![[Pasted image 20240112130947.png]]
 
 Czym jest opcja ustalania osiągalności i przesyłania pakietów "mesh-under"?
 ?
@@ -787,7 +787,7 @@ Aby poradzić sobie z ograniczeniami pamięciowymi i obliczeniowymi stosowane s�
 Na czym polega acykliczność RPL?
 ?
 RPL opiera się na skierowanym grafie acyklicznym zorientowanym na miejsce docelowe (DODAG) - z dowolnego wierzchołka nie można podążać wzdłuż łuków z powrotem do tego samego punktu. Dodatkowo miejsce docelowe występuje na routerze granicznym jako root DODAG . 
-![[Pasted image 20240112132707.png|400]]
+![[Pasted image 20240112132707.png]]
 
 
 Ilu rodziców ma węzeł w DODAG?
@@ -795,17 +795,17 @@ Ilu rodziców ma węzeł w DODAG?
 Trzech. Zapewniają oni ścieżkę do korzenia. Zazwyczaj jeden z rodziców jest preferowany.
 
 Jak są konfigurowane trasy w IPv6 routing Protocol for Low Power and Lossy Network (RPL)?
-![[Pasted image 20240112133500.png|400]]
+![[Pasted image 20240112133500.png]]
 ?
 Trasy w górę są wykrywane i konfigurowane za pomocą DAG Information Object (**DIO**). Mówią one węzłom, kto jest ich rodzicem i określają najlepszą ścieżkę do katalogu głównego DODAG. Węzły ustalają trasy w dół ogłaszając swoich rodziców za pomocą Destination Advertising Object (**DAO**) - komunikaty te informują rodziców o obecności dzieci
-![[Pasted image 20240112133636.png|400]]
+![[Pasted image 20240112133636.png]]
 
 Jak działa funkcja celu (**OF**) RFC 6719 minimalnej oczekiwanej liczby transakcji (**METX**)?
 ?
 Rodzice pakują wartość **METX** do DIO i dziecko wybiera minimalną wartość (najlepszego rodzica)
 
 Czym jest ranga w DODAG?
-![[Pasted image 20240112133636.png|400]]
+![[Pasted image 20240112133636.png]]
 ?
 Jest przybliżeniem tego jak blisko węzeł jest od roota i pomaga uniknąć problemu zliczania w nieskończoność. Węzły mogą:
 - zwiększyć swoją rangę tylko po otrzymaniu **DIO** z większym numerem wersji. 
@@ -835,7 +835,7 @@ Wymień podobieństwa między sensorem a elementem wykonawczym.
 Czy sensory mogą się komunikować z serwerem?
 ?
 Szyfrowana implementacja protokółu TCP/IP lub UDP jest ciężka (objętościowo i obliczeniowo). Dodatkowo byłoby to raczej bez sensu, głupie pytanie.  
-![[Pasted image 20240105010104.png|700]]
+![[Pasted image 20240105010104.png]]
 ![[Pasted image 20240112003542.png]]
 
 | Transmission Control Protocol                                                                                     | User Datagram Protocol                                                                                                    |
@@ -862,14 +862,14 @@ Jeszcze jak, oczywiście w uproszczonej formie, bez HTTP
 
 Jakie protokoły znajdują w stosie pod CoAP i MQTT?
 ?
-![[Pasted image 20240105012752.png|700]]
+![[Pasted image 20240105012752.png]]
 
 
 
 Opisz **CoAP** (Constrained Application Protocol).
 ?
 Umożliwia komunikacje punkt-punkt *(nie mylić z peer-to-peer)* za pośrednictwem UDP. Taki niskoenergetyczny i odporniejszy na straty HTTP - umożliwia przesyłanie dokumentów i jest kompatybilny z RESTful. Standardy dojrzewają.
-![[Pasted image 20240105014416.png|400]]
+![[Pasted image 20240105014416.png]]
 
 
 
@@ -877,7 +877,7 @@ Opisz Message Queueue Telemetry Transmission.
 ?
 Jest to pewnego rodzaju kolejka* w której pośredniczy broker - do niego publisher wysyła nowe wiadomości, by ten przesłał je do subskrybentów.
 W tradycyjnej kolejce dodawane są nowe elementy, w MQTT dla danego tematu nowe elementy zastępują stare. Nowe tematy można tworzyć na bieżąco.
-![[Pasted image 20240105014557.png|400]]
+![[Pasted image 20240105014557.png]]
 
 
 Tematy w MQTT są hierarchiczne. W jaki sposób?
@@ -894,7 +894,7 @@ Dla komunikacji MQTT można określić Quality of Services (**QoS**). Opisz je.
 
 
 Do czego służy Last Will and Testament (**LWT**)
-![[Pasted image 20240106164738.png|400]]
+![[Pasted image 20240106164738.png]]
 ?
 Jest to komunikat o stanie i celu (w tym opublikowanych poleceniach i subskrypcjach) przechowywany przez brokera. 
 Po utracie połączenia z publisherem, broker powiadamia wszystkich subskrybentów wysyłając LWT
@@ -918,13 +918,13 @@ Wymień zalety i wady MQTT.
 
 Podsumowanie CoAP vs MQTT.
 ?
-![[Pasted image 20240106170045.png|700]]
+![[Pasted image 20240106170045.png]]
 
 ## Architektura i projektowanie IoT 11
 
 Opisz architekturę oneM2M (machine-to-machine).
 ?
-![[Pasted image 20240106172529.png|700]]
+![[Pasted image 20240106172529.png]]
 
 
 Sieć FAN?
@@ -932,9 +932,9 @@ Sieć FAN?
 F** Area Network
 
 Opisz warstwy ustandaryzowanej architektury IoT World Forum (IoTWF).
-![[Pasted image 20240106173010.png|700]]
+![[Pasted image 20240106173010.png]]
 ?
-![[Pasted image 20240106173020.png|700]]
+![[Pasted image 20240106173020.png]]
 
 
 Czym są Edge (mist), Fog, Cloud w kontekście przetwarzania danych?
@@ -967,7 +967,7 @@ Istnieją 4 rodzaje wyników analizy danych. Opowiedz o nich.
 - preskryptywna - Jak rozwiązać problem?
 
 Czym różni się supervised od unsupervised learning?
-![[Pasted image 20240108230646.png|700]]
+![[Pasted image 20240108230646.png]]
 ?
 - supervised - jabłka i banany są oznaczone, model tylko musi zauważyć różnicę by być w stanie je rozróżnić i powiedzieć co jest czym
 - unsupervised - model musi zauważyć, że są obiekty podobne i znacząco różne od siebie. Z tego można wywnioskować, że coś jest A a coś B  
@@ -1001,7 +1001,7 @@ Jakie bazy danych się wykorzystuje w IoT?
 	- Flink - rozproszony silnik do obliczeń stanowych w nieograniczonych i ograniczonych strumieniach danych
 
 Czym jest Lambda?
-![[Pasted image 20240110105606.png|700x500]] ![[Pasted image 20240110110126.png|700x500]]
+![[Pasted image 20240110105606.png]] ![[Pasted image 20240110110126.png]]
 ?
 Architektura umożliwiająca korzystanie z danych wsadowych (z dysku) i strumieniowych. Poza tym, że jest magazynem danych, jest też mediatorem między tymi danymi a odbiorami danych.
 
@@ -1014,7 +1014,7 @@ Opisz cykl zarządzania danymi
 ## Bezpieczeństwo i prywatność
 
 Opisz Mirai (atak, nie postać z anime)
-![[Pasted image 20240109105913.png|400]]
+![[Pasted image 20240109105913.png]]
 ?
 DDOS wyprowadzony z botnetu (zainfekowanego sprzętu z Linuxem)
 1. Skanowanie: badanie losowych IPv4 w szczególnośći portów 23 i 2323 (telnet TCP). W przypadku sukcesu umieszczanie czarnej listy adresów IP, których należy unikać
@@ -1026,14 +1026,14 @@ DDOS wyprowadzony z botnetu (zainfekowanego sprzętu z Linuxem)
 4. DDOS: powódź SYN, GRE IP, STOMP, DNS
 
 Opisz Stuxnet
-![[Pasted image 20240109111517.png|400]]
+![[Pasted image 20240109111517.png]]
 ?
 Robak do: niszczenia pomp i wirówek gazowych do wzbogacania uranu, a konkretniej programowalnych sterowników logicznych (**PLC**) Siemens S7-300 obracających się z częstotliwością 807 Hz i 1210 Hz opartych na SCADA 
 1. infekcja: wgranie oprogramowania na pierwsze urządzenie przy pomocy USB i skradzionego i odpowiednio podpisanego certyfikatu sterownika Realtek (dzięki temu oprogramowanie antywirusowe nie było w stanie wykryć malware'u)
 2. atak i rozprzestrzenianie: skanowanie systemu Windows w poszukiwaniu oprogramowania sterującego PLC Siemens SCADA 
 
 Opisz atak Chain Reaction 
-![[Pasted image 20240109115249.png|400]]
+![[Pasted image 20240109115249.png]]
 ?
 Atak na sieci o topologi siatki (mesh) PAN, o ile do konfiguracji użyto protokół Zigbee (w tym protokole wiadomości nie są szyfrowane ani podpisywane, jedynie wymiana kluczy była szyfrowana, jednak klucz główny wyciekł). Ataki mogą być wykonane bez internetu
 1. Infekcja: Przerwanie szyfrowania i podpisywania, a następnie wprowadzenie "łatki" do pojedynczej żarówki. 
@@ -1101,7 +1101,7 @@ Wymień różnice między polityką bezpieczeństwa sieci IT oraz OT w kontekśc
 6. Ochrony przed zagrożeniami
 7. Aktualizacjami
 ?
-![[Pasted image 20240111204625.png|700]]
+![[Pasted image 20240111204625.png]]
 
 Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy?
 ![[Pasted image 20240111221518.png]]
@@ -1135,7 +1135,7 @@ Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować u
 
 
 Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy (jest ich 5)?
-![[Pasted image 20240111205427.png|700]]
+![[Pasted image 20240111205427.png]]
 ?
 **Sieć korporacyjna**
  5. **sieć korporacyjna** - aplikacje korporacyjne CRM, ERP, VPN, HGB, CBA, FBI, itd
@@ -1153,7 +1153,7 @@ Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować u
 
 
 Jakie są dobre praktyki w zakresie bezpieczeństwa IoT? 
-![[Pasted image 20240111222729.png|400]]
+![[Pasted image 20240111222729.png|200]]
 ?
 1. Używaj NaJNowszEgo systemu operacyjnego i bibliotek
 2. użyj sprzętu, który zawiera funkcje bezpieczeństwa i przestrzenie gdzie nie można wykonywać kodu

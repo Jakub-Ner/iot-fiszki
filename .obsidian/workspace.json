@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "f3d0f40f0a58c2e1",
+        "id": "c4ce9459a414242a",
         "type": "split",
         "children": [
           {
@@ -26,11 +26,11 @@
             ]
           },
           {
-            "id": "a3f5a46d5664616b",
+            "id": "e121ae9be4dc81fb",
             "type": "tabs",
             "children": [
               {
-                "id": "96a371e5ec9002ae",
+                "id": "d364d7b60b8ac7dd",
                 "type": "leaf",
                 "state": {
                   "type": "terminal:terminal",
@@ -58,8 +58,8 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 80,
-                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git add ",
+                        "columns": 85,
+                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git add",
                         "rows": 20
                       }
                     }
@@ -242,7 +242,7 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "96a371e5ec9002ae",
+  "active": "d364d7b60b8ac7dd",
   "lastOpenFiles": [
     "Iot Fiszki.md",
     "FILES/Pasted image 20240112142245.png",
