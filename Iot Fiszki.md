@@ -616,6 +616,10 @@ Czym się charakteryzują dłuższe fale elektromagnetyczne?
 - lepiej penetrują ściany
 - spory zasięg przy niewielkiej mocy nadajnika
 
+
+
+
+
 Wymień parametry komunikacyjne transmisji bezprzewodowej.
 ?
 - zasięg:
@@ -650,6 +654,39 @@ Wymień parametry komunikacyjne transmisji bezprzewodowej.
 		- ograniczone ale są w stanie obsługiwać większość serwerowych protokołów
 ![[Pasted image 20240104230910.png]]
 
+
+Opisz protokół IEEE 802.**15.4.**
+?
+To technologia dostępu bezprzewodowego do urządzeń o niskiej przepustowości, zasilanych lub zasilanych bateryjnie. Dane są odbierane i przesyłane przez warstwę fizyczną MAC. Wykorzystuje AES. 
+Przykłady użycia:
+- automatyka domowa i budowlana
+- sieci w przemyśle samochodowym
+- zabawki interaktywne i zdalnie sterowane
+
+Wymień stosy protokołów bazujące na 802.**15.4**.
+?
+- ZigBee 
+- 6LoWPAN
+- WirelessHart
+![[Pasted image 20240112142245.png|400]]
+
+Opisz IEEE 1901.2a.
+?
+Jest to technologia przewodowa wąskopasmowa w linii zasilającej NB-PLC (Narrowband Power Line Communication). Ma duży zasięg i odporność na zakłócenia na tych samych przewodach, które przewodzą energię elektryczną. 
+Przykłady użycia:
+- automatyzacja dystrybucji
+- oświetlenie publiczne
+- stacje ładowania pojazdów elektrycznych
+- energia odnawialna
+
+
+Opisz IEEE 802.**11ah**.
+![[Pasted image 20240112141600.png|400]]
+?
+Wykorzystywana w sieciach bez ograniczeń. Służy do podłączania punktów końcowych (np węzłów obliczeniowych (mgły)), czujników o dużej szybkości transmisji danych oraz urządzenia do analizy audio i wideo. Przykłady użycia:
+- czujniki i mierniki obejmujące inteligentną siatkę
+- agregacja przez sieć dosyłową (backhaul)
+- Wi-Fi o zwiększonym zasięgu
 
 
 Czy WiFi obsługuje pasma poniżej 1 GHz?
