@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "c4ce9459a414242a",
+        "id": "60cecf607fb4b9ca",
         "type": "split",
         "children": [
           {
@@ -26,11 +26,11 @@
             ]
           },
           {
-            "id": "e121ae9be4dc81fb",
+            "id": "0844f19cff57f435",
             "type": "tabs",
             "children": [
               {
-                "id": "d364d7b60b8ac7dd",
+                "id": "df82548bf80e761b",
                 "type": "leaf",
                 "state": {
                   "type": "terminal:terminal",
@@ -58,8 +58,8 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 85,
-                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git add",
+                        "columns": 181,
+                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git  a",
                         "rows": 20
                       }
                     }
@@ -242,7 +242,7 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "d364d7b60b8ac7dd",
+  "active": "df82548bf80e761b",
   "lastOpenFiles": [
     "Iot Fiszki.md",
     "FILES/Pasted image 20240112142245.png",

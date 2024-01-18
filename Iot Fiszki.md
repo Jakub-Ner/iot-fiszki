@@ -26,7 +26,7 @@ Wymień rodzaje sieci wchodzące w skład IoT.
 Gdzie można zarządzać danymi?
 ?
 ![[Pasted image 20240106173823.png]]
-- Chmura (**Cloud**) - chmura lub centralne centrum danych, 
+- Chmura (**Cloud**) - chmura lub centralne centrum danych,
 - Mgła (**Fog**) - bramy i sieć tranzytowa,
 - Krawędź (**Edge**) - w czujnikach.
 
@@ -48,7 +48,7 @@ Wymień podstawowe parametry ADC:
 - Resolution - liczba bitów
 - Precision - stabilność pomiarów
 - $V_{REF}$ (napięcie odniesienia - maksymalne) - wewnętrzne / zewnętrzne
-- Input scaling - zakres napięcia, jedno-, dwubiegunowość, 
+- Input scaling - zakres napięcia, jedno-, dwubiegunowość,
 - Prędkość - czas konwersji, opóźnienie
 
 Wymień podstawowe parametry DAC:
@@ -82,15 +82,15 @@ Wymień źródła pomiaru czujnika.
 - sygnał analogowy, zwykle w postaci napięcia lub prądu odpowiadającego zmierzonej wartości.
 
 Czym jest system wbudowany (Embedded)?
-? 
+?
 Połączenie sprzętu i oprogramowania (w tym systemu operacyjnego)
 
 ## Wprowadzenie do programowania mikrokontrolerów 02
 
 Co zawiera w sobie MCU (microcontroller unit)?
 ?
-- przynajmniej jeden rdzeń procesora 
-- pamięć 
+- przynajmniej jeden rdzeń procesora
+- pamięć
 - programowalne urządzenia I/O
 
 Jakie wyróżniamy architektury mikrokontrolerów?
@@ -149,7 +149,7 @@ Zapewnia, że odczyt danych nie będzie optymalizowany, a wartość zmiennej bę
 
 Czym jest **ISP** (In-System-Programming)?
 ?
-Programowanie urządzenia w ramach instalacji całego systemu, a nie osobno każdego komponentu mikrokontrolera. 
+Programowanie urządzenia w ramach instalacji całego systemu, a nie osobno każdego komponentu mikrokontrolera.
 
 Co umożliwia **JTAG** (Joint Test Action Group)?
 ?
@@ -168,7 +168,7 @@ Jednostka Arytmetyczna Logiczna
 
 Czym jest pamięć **Flash**?
 ?
-- Nieulotna, 
+- Nieulotna,
 - programowalna, reprogramowalna i elektrycznie czyszczona, może zawierać Boot Loader i sekcję programu. Nie da się wyczyścić mniej niż określony blok (kilka) bajtów
 
 Czym jest **SRAM**?
@@ -178,12 +178,12 @@ Static Random-Access Memory, pamięć ulotna
 Czym jest **EEPROM**?
 ![[Pasted image 20240111224938.png]]
 ?
-Electrically Erasable Programmable Read-Only Memory. Podobny do pamięci Flash ale można w nim czyścić pojedynczy bajt. Wolniejszy ale prostszy w użyciu 
+Electrically Erasable Programmable Read-Only Memory. Podobny do pamięci Flash ale można w nim czyścić pojedynczy bajt. Wolniejszy ale prostszy w użyciu
 
 
 Do czego służą **Fusebity**?
 ?
-Pozwalają skonfigurować wybrane funkcje (np watchdog'a) lub parametry pracy mikrokontrolera jeszcze przed uruchomieniem programu z jego pamięci. Trzymane są w pamięci EEPROM. 
+Pozwalają skonfigurować wybrane funkcje (np watchdog'a) lub parametry pracy mikrokontrolera jeszcze przed uruchomieniem programu z jego pamięci. Trzymane są w pamięci EEPROM.
 
 Do czego służą **Lockbity**?
 ?
@@ -230,10 +230,10 @@ Jakie są źródła resetu?
 - **Brown-out Reset**:
 	- gdy niespełniona jest histereza np. $V_{BOT-}$ < $V_{BOT+}$, która eliminuje migotanie sygnału resetowania
 	- konfigurowane przez fusebity
-**- External Reset**:
-	- po przytrzymaniu niskiego poziomu na pinie $\overline{RESET}$  
 	- może zostać wyłączony poprzez ustawienie fusebit RSTDISBL.
-**- Watchdog System Reset**:
+- **External Reset**: 
+	- po przytrzymaniu niskiego poziomu na pinie $\overline{RESET}$
+- **Watchdog System Reset**:
 	- po wykryciu blokady (nikt nie kopnął psa od zbyt dawna)
 	- włączany i ustawiany za pomocą fusebitów
 	- szczególnie zalecany, gdy urządzenie działa przez dłuższy czas bez nadzoru
@@ -254,7 +254,7 @@ Zasygnalizowana zmiana lub osiągnięcie stanu opisanego przez warunek (np. zmia
 Czym jest system zdarzeń (**EVSYS**) i do czego służy?
 ![[Pasted image 20240111224741.png]]
 ?
-Pozwala podsystemom (urządzeniom peryferyjnym) lub programowi komunikować się bezpośrednio (z pominięciem CPU) poprzez konfigurowalną sieć routingu zdarzeń. 
+Pozwala podsystemom (urządzeniom peryferyjnym) lub programowi komunikować się bezpośrednio (z pominięciem CPU) poprzez konfigurowalną sieć routingu zdarzeń.
 
 ## Wprowadzenie do programowania mikrokontrolerów 04
 
@@ -386,7 +386,7 @@ Nie można podłączyć bezpośrednio. Mogłoby to spowodować uszkodzenie urz�
 
 Czym jest współczynnik wypełnienia przebiegu elektrycznego?
 ?
-Pozwala regulować średnie natężenie prądu. Jest to cykl PWM (?)
+Pozwala regulować średnie natężenie prądu. Jest to cykl PWM.
 
 
 
@@ -399,7 +399,7 @@ Opisz zasadę działania wyświetlacza LCD.
 
 Czym jest przetwornik?
 ?
-Urządzenie przetwarzające energię (elektryczną lub nie) w inną (elektryczną lub nie) 
+Urządzenie przetwarzające energię (elektryczną lub nie) w inną (elektryczną lub nie)
 
 Jak dzielimy czujniki (taksonomia)?
 ?
@@ -457,7 +457,7 @@ pole magnetyczne silnika wchodzi w interakcję z prądem elektrycznym, generują
 
 Jak mogą być zasilane silniki?
 ?
-- prądem stałym (AC): 
+- prądem stałym (AC):
 	- akumulatory
 	- prostowniki
 	- pojazdy silnikowe
@@ -511,7 +511,7 @@ Jakie wyróżniamy parametry portu szeregowego?
 	- niektóre systemy automatycznie wykrywają prędkość
 - **bity danych** - endianness (LSB lub MSB) muszą być zgodne
 - **parzystość** - do wykrywania błędów transmisji, do znaku danych wysyłany jest dodatkowy bit, tak aby suma bitów była zawsze parzysta (**E**ven) lub nieparzysta (**O**dd)
-- **bity stopu** - do synchronizacji, na końcu znaku umieszczają 
+- **bity stopu** - do synchronizacji, na końcu znaku umieszczają
 ![[Pasted image 20240104002532.png]]
 
 
@@ -570,6 +570,7 @@ Półdupleksowa, multi-master, multi-slave, asynchroniczna szeregowa magistrala
 
 
 Wymień warstwy sieci (modele ISO/OSI i TCP/IP)
+?
 ![[Pasted image 20240104162126.png]]
 
 
@@ -578,7 +579,7 @@ Wymień warstwy sieci (modele ISO/OSI i TCP/IP)
 
 Czym jest Sensor and Actuators Network (SANETs)?
 ?
-Sieć czujników i urządzeń wykonawczych komunikujących się ze sobą, np inteligentne domy. 
+Sieć czujników i urządzeń wykonawczych komunikujących się ze sobą, np inteligentne domy.
 - Zalety:
 	▶ Łatwość wdrożenia
 	▶ Skalowalne
@@ -591,7 +592,7 @@ Sieć czujników i urządzeń wykonawczych komunikujących się ze sobą, np int
 
 Podaj wzór na długość fali.
 ?
-#### $\lambda = \frac{v}{f}$
+$\lambda = \frac{v}{f}$
 gdzie:
 - $\lambda$ - długość fali
 - $v$ - prędkość
@@ -615,8 +616,6 @@ Czym się charakteryzują dłuższe fale elektromagnetyczne?
 - transmitują mniej danych
 - lepiej penetrują ściany
 - spory zasięg przy niewielkiej mocy nadajnika
-
-
 
 
 
@@ -644,7 +643,7 @@ Wymień parametry komunikacyjne transmisji bezprzewodowej.
 - topologia:
 	- gwiazda (star), np telefon i słuchawki, głośnik
 	- peer-to-peer (P2P)- każdy z każdym (w określonym zasięgu) się komunikuje
-	- siatka (mesh) - specjalny rodzaj P2P 
+	- siatka (mesh) - specjalny rodzaj P2P
 - ograniczone węzły:
 	- klasa 0:
 		- prymitywne urządzenia, podobne do czujników (niezabezpieczone, przesyłają dane do proxy lub bram)
@@ -657,7 +656,7 @@ Wymień parametry komunikacyjne transmisji bezprzewodowej.
 
 Opisz protokół IEEE 802.**15.4.**
 ?
-To technologia dostępu bezprzewodowego do urządzeń o niskiej przepustowości, zasilanych lub zasilanych bateryjnie. Dane są odbierane i przesyłane przez warstwę fizyczną MAC. Wykorzystuje AES. 
+To technologia dostępu bezprzewodowego do urządzeń o niskiej przepustowości, zasilanych lub zasilanych bateryjnie. Dane są odbierane i przesyłane przez warstwę fizyczną MAC. Wykorzystuje AES.
 Przykłady użycia:
 - automatyka domowa i budowlana
 - sieci w przemyśle samochodowym
@@ -665,14 +664,14 @@ Przykłady użycia:
 
 Wymień stosy protokołów bazujące na 802.**15.4**.
 ?
-- ZigBee 
+- ZigBee
 - 6LoWPAN
 - WirelessHart
 ![[Pasted image 20240112142245.png]]
 
 Opisz IEEE 1901.2a.
 ?
-Jest to technologia przewodowa wąskopasmowa w linii zasilającej NB-PLC (Narrowband Power Line Communication). Ma duży zasięg i odporność na zakłócenia na tych samych przewodach, które przewodzą energię elektryczną. 
+Jest to technologia przewodowa wąskopasmowa w linii zasilającej NB-PLC (Narrowband Power Line Communication). Ma duży zasięg i odporność na zakłócenia na tych samych przewodach, które przewodzą energię elektryczną.
 Przykłady użycia:
 - automatyzacja dystrybucji
 - oświetlenie publiczne
@@ -696,7 +695,7 @@ Nie
 
 Modulacja LoRa opiera się na modulacji rozproszonego widma. W wyniku tego prędkość transmisji jest niska. Gdzie tu korzyść?
 ?
-Znaczne zwiększenie odległości komunikacji. Bo $\lambda = \frac{v}{f}$, a: 
+Znaczne zwiększenie odległości komunikacji. Bo $\lambda = \frac{v}{f}$, a:
 `niższe częstotliwości` -> `większe długości fal` -> `większy zasięg`
 LoRaWAN osiąga częstotliwości sub-GHz (poniżej 1 GHz)
 
@@ -781,12 +780,12 @@ Jak działa IPv6 routing Protocol for Low Power and Lossy Network (**RPL**)?
 Każdy węzeł działa jak router i staje się częścią sieci (mesh). Routing odbywa się w warstwie IP. Każdy węzeł sprawdza odebrany pakiet i określa miejsce docelowe następnego przeskoku. żadne informacje z warstwy MAC nie są potrzebne, dlatego nazwa mesh-over-routing.
 Aby poradzić sobie z ograniczeniami pamięciowymi i obliczeniowymi stosowane są dwa tryby:
 - **z przechowywaniem** - wszystkie węzły zawierają pełną tablice routingu RPL, każdy wie, jak bezpośrednio dotrzeć do każdego węzła
-- **bez przechowywania** - tylko graniczne routery zawierają pełną tablicę routingu. Pozostałe posiadają tylko adresy rodziców 
+- **bez przechowywania** - tylko graniczne routery zawierają pełną tablicę routingu. Pozostałe posiadają tylko adresy rodziców
 
 
 Na czym polega acykliczność RPL?
 ?
-RPL opiera się na skierowanym grafie acyklicznym zorientowanym na miejsce docelowe (DODAG) - z dowolnego wierzchołka nie można podążać wzdłuż łuków z powrotem do tego samego punktu. Dodatkowo miejsce docelowe występuje na routerze granicznym jako root DODAG . 
+RPL opiera się na skierowanym grafie acyklicznym zorientowanym na miejsce docelowe (DODAG) - z dowolnego wierzchołka nie można podążać wzdłuż łuków z powrotem do tego samego punktu. Dodatkowo miejsce docelowe występuje na routerze granicznym jako root DODAG .
 ![[Pasted image 20240112132707.png]]
 
 
@@ -808,7 +807,7 @@ Czym jest ranga w DODAG?
 ![[Pasted image 20240112133636.png]]
 ?
 Jest przybliżeniem tego jak blisko węzeł jest od roota i pomaga uniknąć problemu zliczania w nieskończoność. Węzły mogą:
-- zwiększyć swoją rangę tylko po otrzymaniu **DIO** z większym numerem wersji. 
+- zwiększyć swoją rangę tylko po otrzymaniu **DIO** z większym numerem wersji.
 - obniżyć rangę, o ile ustaliły tańszą trasę
 
 Jakie są dostępne metryki dla RPL (jest ich 8)?
@@ -834,8 +833,11 @@ Wymień podobieństwa między sensorem a elementem wykonawczym.
 
 Czy sensory mogą się komunikować z serwerem?
 ?
-Szyfrowana implementacja protokółu TCP/IP lub UDP jest ciężka (objętościowo i obliczeniowo). Dodatkowo byłoby to raczej bez sensu, głupie pytanie.  
+Szyfrowana implementacja protokółu TCP/IP lub UDP jest ciężka (objętościowo i obliczeniowo). Dodatkowo byłoby to raczej bez sensu, głupie pytanie.
 ![[Pasted image 20240105010104.png]]
+
+Porównaj TCP i UDP.
+?
 ![[Pasted image 20240112003542.png]]
 
 | Transmission Control Protocol                                                                                     | User Datagram Protocol                                                                                                    |
@@ -890,13 +892,13 @@ Dla komunikacji MQTT można określić Quality of Services (**QoS**). Opisz je.
 ?
 - QoS-0 - niepotwierdzona transmisja
 - QoS-1 - potwierdzona przez odbiorcę (domyślny tryb)
-- QoS-2 - potwierdzona przez nadawcę i odbiorcę 
+- QoS-2 - potwierdzona przez nadawcę i odbiorcę
 
 
 Do czego służy Last Will and Testament (**LWT**)
 ![[Pasted image 20240106164738.png]]
 ?
-Jest to komunikat o stanie i celu (w tym opublikowanych poleceniach i subskrypcjach) przechowywany przez brokera. 
+Jest to komunikat o stanie i celu (w tym opublikowanych poleceniach i subskrypcjach) przechowywany przez brokera.
 Po utracie połączenia z publisherem, broker powiadamia wszystkich subskrybentów wysyłając LWT
 
 
@@ -914,7 +916,7 @@ Wymień zalety i wady MQTT.
 	- protokół TCP
 	- obciążony broker
 	- broker jako bottleneck - bez niego nie ma komunikacji
-	- bezpieczeństwo - domyślnie TLS/SSL jest wyłączone 
+	- bezpieczeństwo - domyślnie TLS/SSL jest wyłączone
 
 Podsumowanie CoAP vs MQTT.
 ?
@@ -929,7 +931,7 @@ Opisz architekturę oneM2M (machine-to-machine).
 
 Sieć FAN?
 ?
-F** Area Network
+Field Area Network
 
 Opisz warstwy ustandaryzowanej architektury IoT World Forum (IoTWF).
 ![[Pasted image 20240106173010.png]]
@@ -962,7 +964,7 @@ Czym są dane w spoczynku a czym w ruchu?
 Istnieją 4 rodzaje wyników analizy danych. Opowiedz o nich.
 ?
 - opisowa - co się *w silniku*? - np termometr w samochodzie co sekundę podaje wartość
-- diagnostyczna - Dlaczego *silnik się zepsuł*? 
+- diagnostyczna - Dlaczego *silnik się zepsuł*?
 - predykcyjna - Jaka szansa ponownego wystąpienia?
 - preskryptywna - Jak rozwiązać problem?
 
@@ -970,7 +972,7 @@ Czym różni się supervised od unsupervised learning?
 ![[Pasted image 20240108230646.png]]
 ?
 - supervised - jabłka i banany są oznaczone, model tylko musi zauważyć różnicę by być w stanie je rozróżnić i powiedzieć co jest czym
-- unsupervised - model musi zauważyć, że są obiekty podobne i znacząco różne od siebie. Z tego można wywnioskować, że coś jest A a coś B  
+- unsupervised - model musi zauważyć, że są obiekty podobne i znacząco różne od siebie. Z tego można wywnioskować, że coś jest A a coś B
 
 Które warstwy IoT są zaangażowane w uczenie lokalne a które w uczenie zdalne?
 ?
@@ -1018,8 +1020,8 @@ Opisz Mirai (atak, nie postać z anime)
 ?
 DDOS wyprowadzony z botnetu (zainfekowanego sprzętu z Linuxem)
 1. Skanowanie: badanie losowych IPv4 w szczególnośći portów 23 i 2323 (telnet TCP). W przypadku sukcesu umieszczanie czarnej listy adresów IP, których należy unikać
-2. nawiązanie sesji Telnet z ofiarą: logowanie brute force  
-3. infekcja: 
+2. nawiązanie sesji Telnet z ofiarą: logowanie brute force
+3. infekcja:
 	1. identyfikacja systemu i instalacja malware'u
 	2. ubicie pozostałych portów 22 i 23
 	3. maskowanie 'niespodzianki'
@@ -1028,22 +1030,22 @@ DDOS wyprowadzony z botnetu (zainfekowanego sprzętu z Linuxem)
 Opisz Stuxnet
 ![[Pasted image 20240109111517.png]]
 ?
-Robak do: niszczenia pomp i wirówek gazowych do wzbogacania uranu, a konkretniej programowalnych sterowników logicznych (**PLC**) Siemens S7-300 obracających się z częstotliwością 807 Hz i 1210 Hz opartych na SCADA 
+Robak do: niszczenia pomp i wirówek gazowych do wzbogacania uranu, a konkretniej programowalnych sterowników logicznych (**PLC**) Siemens S7-300 obracających się z częstotliwością 807 Hz i 1210 Hz opartych na SCADA
 1. infekcja: wgranie oprogramowania na pierwsze urządzenie przy pomocy USB i skradzionego i odpowiednio podpisanego certyfikatu sterownika Realtek (dzięki temu oprogramowanie antywirusowe nie było w stanie wykryć malware'u)
-2. atak i rozprzestrzenianie: skanowanie systemu Windows w poszukiwaniu oprogramowania sterującego PLC Siemens SCADA 
+2. atak i rozprzestrzenianie: skanowanie systemu Windows w poszukiwaniu oprogramowania sterującego PLC Siemens SCADA
 
-Opisz atak Chain Reaction 
+Opisz atak Chain Reaction
 ![[Pasted image 20240109115249.png]]
 ?
 Atak na sieci o topologi siatki (mesh) PAN, o ile do konfiguracji użyto protokół Zigbee (w tym protokole wiadomości nie są szyfrowane ani podpisywane, jedynie wymiana kluczy była szyfrowana, jednak klucz główny wyciekł). Ataki mogą być wykonane bez internetu
-1. Infekcja: Przerwanie szyfrowania i podpisywania, a następnie wprowadzenie "łatki" do pojedynczej żarówki. 
+1. Infekcja: Przerwanie szyfrowania i podpisywania, a następnie wprowadzenie "łatki" do pojedynczej żarówki.
 2. Rozprzestrzenianie: Zaatakowana żarówka przyłączy się do sieci na podstawie skradzionego klucza głównego i wykorzysta bezpieczeństwo zbliżeniowe. Po pomyślnym dołączeniu żarówki zaraża ona sąsiednie (w promieniu kilkuset metrów) żarówki
 
 Czym się różnią technologia informacyjna od operacyjnej?
 ?
 - dział IT:
-	- odpowiada za infrastrukturę, m.in. połączenia z internetem wraz z powiązanymi systemami danych. 
-	- Ponadto za informacyjne systemy firmy np e-maile. 
+	- odpowiada za infrastrukturę, m.in. połączenia z internetem wraz z powiązanymi systemami danych.
+	- Ponadto za informacyjne systemy firmy np e-maile.
 	- priorytetyzuje ochronę informacji
 - dział OT:
 	- odpowiada za zarządzanie i stan funkcjonujących systemów, monitoruje i kontroluje urządzenia (np przemysłowe, czy systemy SCADA) i ich procesy
@@ -1115,14 +1117,14 @@ Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować u
 ![[Pasted image 20240111221541.png]]
 ?
 **Przemysłowa Strefa zdemilitaryzowana**
-	 **strefa zdemilitaryzowana** - stanowi bufor, w którym dane z sąsiednich poziomów mogę być współużytkowane, ale żaden ruch nie powinien przez nią przechodzić na drugą stronę  
+	 **strefa zdemilitaryzowana** - stanowi bufor, w którym dane z sąsiednich poziomów mogę być współużytkowane, ale żaden ruch nie powinien przez nią przechodzić na drugą stronę
 
 Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować urządzenia i sprzęt wg. hierarchicznych poziomów funkcji oraz obszarów. Co to za poziomy?
 ![[Pasted image 20240111221653.png]]
 ?
 **Strefa operacyjna**
 3. **operacje i sterowanie** - monitorowanie i kontrolowanie systemu, planowanie produkcji, zapewnienie niezawodności, optymalizacja systemu, zarządzanie siecią w usługami IT z tym związanymi (DHCP, DNS)
-2. **Sterowanie nadzorcze** - administracja sieci/aplikacji systemu sterowania (w tym **HMI** (human-machine-interface)) i zbieranie danych 
+2. **Sterowanie nadzorcze** - administracja sieci/aplikacji systemu sterowania (w tym **HMI** (human-machine-interface)) i zbieranie danych
 1. **Podstawowe sterowanie** - komunikacja kontrolerów, urządzeń **IED** (intelligent electronic device), i dedykowanych **HMI**
 0. Proces: urządzenia (czujniki, wykonawcze, napędy, roboty) komunikują się ze sterownikami lub terminalami **IED**
 *Jeśli się zastanawiasz czemu wszystkie są zaliczone do strefy operacyjnej, a na zdjęciu są rozdzielone to nwm, tak jest na wykładzie*
@@ -1141,10 +1143,10 @@ Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować u
  5. **sieć korporacyjna** - aplikacje korporacyjne CRM, ERP, VPN, HGB, CBA, FBI, itd
  4. **sieć planowania biznesowego i logistyki** - systemy planowania, telefon, poczta e-mail, monitorowanie bezpieczeństwa, drukowania
 **Przemysłowa Strefa zdemilitaryzowana**
-	 **strefa zdemilitaryzowana** - stanowi bufor, w którym dane z sąsiednich poziomów mogę być współużytkowane, ale żaden ruch nie powinien przez nią przechodzić na drugą stronę  
+	 **strefa zdemilitaryzowana** - stanowi bufor, w którym dane z sąsiednich poziomów mogę być współużytkowane, ale żaden ruch nie powinien przez nią przechodzić na drugą stronę
 **Strefa operacyjna**
 3. **operacje i sterowanie** - monitorowanie i kontrolowanie systemu, planowanie produkcji, zapewnienie niezawodności, optymalizacja systemu, zarządzanie siecią w usługami IT z tym związanymi (DHCP, DNS)
-2. **Sterowanie nadzorcze** - administracja sieci/aplikacji systemu sterowania (w tym **HMI** (human-machine-interface)) i zbieranie danych 
+2. **Sterowanie nadzorcze** - administracja sieci/aplikacji systemu sterowania (w tym **HMI** (human-machine-interface)) i zbieranie danych
 1. **Podstawowe sterowanie** - komunikacja kontrolerów, urządzeń **IED** (intelligent electronic device), i dedykowanych **HMI**
 0. Proces: urządzenia (czujniki, wykonawcze, napędy, roboty) komunikują się ze sterownikami lub terminalami **IED**
 **Strefa bezpieczeństwa**
@@ -1152,8 +1154,7 @@ Model Purdue for Control Hierarchy jest frameworkiem pozwalającym pogrupować u
 
 
 
-Jakie są dobre praktyki w zakresie bezpieczeństwa IoT? 
-![[Pasted image 20240111222729.png|200]]
+Jakie są dobre praktyki w zakresie bezpieczeństwa IoT?
 ?
 1. Używaj NaJNowszEgo systemu operacyjnego i bibliotek
 2. użyj sprzętu, który zawiera funkcje bezpieczeństwa i przestrzenie gdzie nie można wykonywać kodu
@@ -1161,38 +1162,11 @@ Jakie są dobre praktyki w zakresie bezpieczeństwa IoT?
 4. wybieraj hasła losowo (`stud`,`dupa123`, itd.)
 5. używaj mechanizmów typu Root of trust i bezpiecznego rozruchu, aby mieć 'złoty' obraz oprogramowania działającego na urządzeniu klienta
 6. wyeliminuj zakodowane hasła w obrazach ROM (read-only-memory)
-7. zamknij porty IP   
-8. używaj losowego układu przestrzeni adresowej, stosuj mechanizmy Stack Canaries oraz Guard bands 
-9. Używaj AUtmoMATycznyCH AKtuAliZacji 
+7. zamknij porty IP
+8. używaj losowego układu przestrzeni adresowej, stosuj mechanizmy Stack Canaries oraz Guard bands
+9. Używaj AUtmoMATycznyCH AKtuAliZacji
 10. zaplanuj etap zakończenia eksploatacji (end-of-life) ⚰️✝️
 11. premiuj za znalezione błędy
 12. bierz udział w US-CERT aby na bieżąco dowiadywać się o exploitach i cyber-zagrożeniach
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
