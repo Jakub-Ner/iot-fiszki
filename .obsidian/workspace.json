@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "60cecf607fb4b9ca",
+        "id": "03a6887732d67326",
         "type": "split",
         "children": [
           {
@@ -15,22 +15,20 @@
                 "id": "80562864aad9d503",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
+                  "type": "image",
                   "state": {
-                    "file": "Iot Fiszki.md",
-                    "mode": "source",
-                    "source": false
+                    "file": "FILES/Pasted image 20240111224654.png"
                   }
                 }
               }
             ]
           },
           {
-            "id": "0844f19cff57f435",
+            "id": "68b87762acb3fb32",
             "type": "tabs",
             "children": [
               {
-                "id": "df82548bf80e761b",
+                "id": "cc2fdc57cc36ce6d",
                 "type": "leaf",
                 "state": {
                   "type": "terminal:terminal",
@@ -58,8 +56,8 @@
                         "useWin32Conhost": true
                       },
                       "serial": {
-                        "columns": 181,
-                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git  a",
+                        "columns": 156,
+                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git commit -m finished",
                         "rows": 20
                       }
                     }
@@ -127,8 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.5110321044922,
-    "collapsed": true
+    "width": 204.5110321044922
   },
   "right": {
     "id": "2c8dc45a2c2004ae",
@@ -242,19 +239,20 @@
       "obsidian-extract-pdf-highlights:PDF Highlights": false
     }
   },
-  "active": "df82548bf80e761b",
+  "active": "cc2fdc57cc36ce6d",
   "lastOpenFiles": [
-    "Iot Fiszki.md",
-    "FILES/Pasted image 20240112142245.png",
-    "FILES/Pasted image 20240112141600.png",
-    "FILES/Pasted image 20240112133636.png",
-    "FILES/Pasted image 20240112133500.png",
-    "FILES/Pasted image 20240112133457.png",
-    "FILES/Pasted image 20240112132707.png",
-    "FILES/Pasted image 20240112132437.png",
-    "FILES/Pasted image 20240112130947.png",
-    "FILES/Pasted image 20240112130337.png",
+    "FILES/Pasted image 20240111224654.png",
+    "FILES/Pasted image 20240111222729.png",
+    "FILES/Pasted image 20240111224741.png",
+    "FILES/Pasted image 20240111224938.png",
+    "FILES/Pasted image 20240111234301.png",
+    "FILES/Pasted image 20240111235058.png",
+    "FILES/Pasted image 20240112000938.png",
+    "FILES/Pasted image 20240112003408.png",
+    "FILES/Pasted image 20240112003542.png",
     "FILES/Pasted image 20240112003842.png",
+    "FILES/Pasted image 20240112130947.png",
+    "Iot Fiszki.md",
     "FILES/Belczyk_266897_IPSv2.pdf",
     "FILES/regulamin-bankuj-mobilnie-10-edycja (2).pdf",
     "tmp.canvas",
