@@ -85,8 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.5110321044922,
-    "collapsed": true
+    "width": 204.5110321044922
   },
   "right": {
     "id": "2c8dc45a2c2004ae",
@@ -211,6 +210,7 @@
   },
   "active": "64dd662e5f692c58",
   "lastOpenFiles": [
+    "NN Fiszki.pdf",
     "FILES/Pasted image 20241204003925.png",
     "FILES/Pasted image 20241204003750.png",
     "FILES/Pasted image 20241204003451.png",
@@ -222,7 +222,6 @@
     "FILES/Pasted image 20241203210010.png",
     "FILES/Pasted image 20241203205922.png",
     "FILES/Pasted image 20241203204218.png",
-    "FILES/Pasted image 20241203203538.png",
     "README.md",
     "Iot Fiszki.md",
     "UruchomienieFIszek.mp4",

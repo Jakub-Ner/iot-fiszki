@@ -37,7 +37,6 @@ Czym jest softmax
 ?
 ![[Pasted image 20241203133046.png]]
 
-
 ## Wykład 3
 
 Jak wyglądają funkcje aktywacji i ich pochodne: **sigmoid, tangens hiperboliczny, relu, softplus**.
@@ -115,8 +114,6 @@ Czym jest F1 score
 ?
 Średnia harmoniczna precyzji i recall
 
-
-
 Czym jest krzywa AUC-ROC (Area Under Curve - Receiver Operating Characteristics)
 ?
 Wykres True-Positive-Rave (**Specifity**) od False-Positive-Rate (Sensitivity). Pożądane jest aby pole pod wykresem było 1.
@@ -150,7 +147,6 @@ Czym jest ADAGRAD
 Jest to adaptacyjny współczynnik uczenia, który w z czasem maleje, przez kumulowanie gradientów w mianowniku, a to może powodować, że współczynnik uczenia będzie nieskończenie mały
 ![[Pasted image 20241203174453.png]]
 
-
 Czym jest ADADELTA
 ?
 Taki ulepszony ADAGRAD, tylko, że do wyliczenia współczynnika uczenia, bierzemy pod uwagę kilka ostatnich gradientów.
@@ -163,7 +159,6 @@ Najczęściej wykorzystywany optymalizator. Estymuje średnią i wariancję grad
 Co powoduje inicjalizacja wag na jednakową wartość (np. 0)
 ?
 Prowadzi do jednakowego wpływu każdego neuronu na funkcję kosztu, a to powoduje, że każdy neuron uczy się tej samej cechy
-
 
 Jak zainicjalizować wagi (najprostsza metoda)
 ?
@@ -181,7 +176,6 @@ Dla każdej warstwy z osobna wylosuj z przedziału $\pm \frac{\sqrt{6}}{\sqrt{n_
 Jak zainicjalizować wagi korzystając z He
 ?
 TODO
-
 
 Czym jest normalizacja batch'a
 ?
@@ -209,7 +203,6 @@ Czym jest konwolucja
 Jest to korelacja wzajemna okolicznych pikseli i filtra odbróconego o 180 stopni. Na zdjęciu wizualizacja kolejnych map aktywacji - niskopoziomowe cechy składają się w rozpoznawalne obiekty.
 ![[Pasted image 20241203203538.png]]
 
-
 Czym jest i do czego wykorzystuje się Pooling
 ?
 Pozwala na agregację (avg lub max) sąsiadujących pikseli. Redukuje liczbę parametrów modelu, pozwala na lepszą generalizację map cech. Pooling nie podlega uczeniu - nie ma wag. 
@@ -226,12 +219,10 @@ Jak przebiega formuła propagacji błędu w sieciach konwolucyjnych
 ?
 XD, nie będzie takiego pytania
 
-
 Czym jest VGG
 ?
 Giga dużo warstw przeplatanych poolingiem. Na końcu 3 warstwy tradycyjnych sieci, a po nich softmax do klasyfikacji co jest na obrazku.
 ![[Pasted image 20241203205922.png]]
-
 
 Co to GoogleNet
 ?
