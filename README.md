@@ -1,4 +1,4 @@
-## Fiszki na IOT
+## Fiszki
 Działa zarówno w wersji desktopowej jak i mobilnej
 
 Aby móc wygodnie z tego korzystać zalecam pobrać repo, a następnie [otworzyć je jako vault (projekt obsidianowy)](./UruchomienieFIszek.mp4). 
