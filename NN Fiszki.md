@@ -2,7 +2,7 @@
 
 # Sieci neuronowe 2024
 
-## Wykład 2
+## Wykład 1
 
 Czym wyróżnia się perceptron prosty (Model Pittsa-Mc Cullocha)
 ?
@@ -78,7 +78,57 @@ Bias a wariancja
 
 ## Wykład 5
 
+Jak sobie radzić z przetrenowaniem modelu?
+?
+1. Regularyzacja wag (L1 lub L2)
+2. Dropout
+3. Wczesne zatrzymanie uczenia
+4. Sztuczne powiększane zbioru uczącego
 
+Na czym polega L2 (Ridge Regression)
+?
+1. **wzór**: $L(\theta) = L_0(\theta) + \lambda \frac{1}{2} \|\theta\|^2$, gdzie $\|\theta\|_2 = (w_1)^2 + (w_2)^2 + \ldots$, a $\lambda$ to hiperparametr. 
+2. **opis**: Na zwiększeniu funkcji straty o kwadraty wag. Im bardziej skomplikowany model, tym większa kara. 
+3. **wpływ na aktualizację wag:** zmniejsza wartości proporcjonalnie do ich wartości, ale nie ustawia ich na 0
+
+Na czym polega L1 (Lasso Regression)
+?
+1. **wzór:** $L(\theta) = L_0(\theta) + \lambda \|\theta\|$, gdzie $\|\theta\| = |w_1| + |w_{2}| + \ldots$, a $\lambda$ to hiperparametr.
+2. **opis:** Na zwiększeniu funkcji straty o wartości bezwględne wag. Im bardziej skomplikowany model, tym większa kara. 
+3. **wpływ na aktualizację wag:** zmniejsza wagi niezależnie od ich wartości, w szczególności może je zerować - tym samym wyłączać neurony
+
+Na czym polega Dropout
+?
+Z określonym prawdopodobieństwem na okres batcha wyłączamy losowe neurony w warstwie ukrytej. Przy każdej paczce wyłączamy inną część sieci. Możemy postrzegać tak wytrenowany model jako rodzina klasyfikatorów (wiele sieci złączone w jedną). Dropout wykorzystywany jest tylko przy treningu
+![[Pasted image 20241204002559.png]]
+
+
+Czym jest macierz pomyłek (confusion matrix)
+?
+![[Pasted image 20241204003242.png]]
+
+Metryki
+?
+![[Pasted image 20241204003750.png]]
+
+Czym jest F1 score
+?
+Średnia harmoniczna precyzji i recall
+
+
+
+Czym jest krzywa AUC-ROC (Area Under Curve - Receiver Operating Characteristics)
+?
+Wykres True-Positive-Rave (**Specifity**) od False-Positive-Rate (Sensitivity). Pożądane jest aby pole pod wykresem było 1.
+![[Pasted image 20241204003925.png]]
+
+Wymień dobre praktyki w projektowaniu sieci MLP
+?
+- sprawdzenie czy zbiór jest zrównoważony
+- kodowanie wartości nominalnych (kategorycznych)
+- skalowanie i normalizacja cech o wartościach rzeczywistych
+- liczba neuronów w warstwie ukrytej to $n_h = \frac{n_{in} + n_{out}}{2}$ lub $n_h = \sqrt{n_{in} n_{out}}$
+- Po trenowaniu zwizualizuj gradienty w każdej warstwie sieci , jeśli większość z nich jest bliska 0 =>większość neuronów przestała się uczyć albo nie działa propagacja wsteczna.
 
 ## Wykład 6
 
