@@ -55,7 +55,7 @@ Jakie są strategie zmiany wag
 ?
 - **Stochastic Gradient Descent**: uaktualnianie wag (parametrów) po każdym wzorcu. Cechuje się dużą wariancją funkcji kosztu :(
 - **Minibatch Gradient Descent**: uaktualnianie wag po m wzorca (m rozmiar minibatcha). Redukuje wariancją (lepiej zbiega).
-- **Batch Gradient Descent**: uaktualnianie wag po wszystkich wzorcach uczących (po całej epoce, of line training). Gwarantuje zbieżność do globalnego optimum :)
+- **Batch Gradient Descent**: uaktualnianie wag po wszystkich wzorcach uczących (po całej epoce, of line training), co zwiększa stabilność względem (bo liczymy gradient dopiero po przejsciu przez cały zbiór uczący)
 
 Jak za pomocą sigmoidu wyrazić tangens hiperboliczny
 ?
