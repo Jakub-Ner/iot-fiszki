@@ -78,6 +78,10 @@ Bias a wariancja
 
 ## Wykład 5
 
+
+
+## Wykład 6
+
 Na czym polega **Momentum** - metoda optymalizująca Gradient Descent
 ?
 Pomaga radzić sobie z "wąwozami" poprzez nadanie "pędu". Do obecnego gradientu dodaje momentum (zakumulowany gradient z poprzednich kroków).
@@ -109,6 +113,97 @@ Najczęściej wykorzystywany optymalizator. Estymuje średnią i wariancję grad
 Co powoduje inicjalizacja wag na jednakową wartość (np. 0)
 ?
 Prowadzi do jednakowego wpływu każdego neuronu na funkcję kosztu, a to powoduje, że każdy neuron uczy się tej samej cechy
+
+
+Jak zainicjalizować wagi (najprostsza metoda)
+?
+1. $w \in \left[-\frac{a}{\sqrt{n_{\text{in}}}}, \frac{a}{\sqrt{n_{\text{in}}}}\right]$, gdzie $n_{in}$ to liczba wejść i $a$ zależy od funkcji aktywacji, 
+- dla sigmoida $a=2.38$, 
+- dla ReLU $a=\sqrt{ 2 }$,
+- dla Tanh $a=1$. 
+2. Można też brać pod uwagę ilość neuronów ukrytych $\left[-n_{\text{in}}\sqrt{N_h}, \, n_{\text{in}}\sqrt{N_h}\right]$. 
+3. Neurony wyjściowe losuje się z przedziału $[-0.5, 0.5]$.
+
+Jak zainicjalizować wagi korzystając z Xaviera
+?
+Dla każdej warstwy z osobna wylosuj z przedziału $\pm \frac{\sqrt{6}}{\sqrt{n_i + n_{i+1}}}$, gdzie $n_{i}$ to wejściowe a  $n_{i+1}$ wyjściowe. Biasy ustaw na 0.
+
+Jak zainicjalizować wagi korzystając z He
+?
+TODO
+
+
+Czym jest normalizacja batch'a
+?
+TODO
+
+Czym jest Autokoder i jak się go trenuje
+?
+Jest to sieć wykorzystująca uczenie nienadzorowane. Składa się z enkodera i dekodera. Celem jest skompresowanie reprezentacji i odtworzenie jej.
+![[Pasted image 20241203201235.png]]
+![[Pasted image 20241203201529.png]]
+
+## Wykład 7
+
+Czemu MLP nie radzą sobie za dobrze z obrazami
+?
+Reprezentacja obrazu w postaci wektora pozbawia sieć reprezentacji przestrzennej i zależności czasowej. Dodatkowo wykorzystanie pełnych połączeń jest wymagające obliczeniowo. 
+
+Czym jest kernel (CNN)
+?
+Inaczej detektor lub filtr - wykrywacz cech, który w wyniku konwolucji - przesuwania się po obrazie z określonym krokiem, tworzy mape aktywacji. Filtr trzyma w sobie wagi.
+![[Pasted image 20241203202801.png]]
+
+Czym jest konwolucja
+?
+Jest to korelacja wzajemna okolicznych pikseli i filtra odbróconego o 180 stopni. Na zdjęciu wizualizacja kolejnych map aktywacji - niskopoziomowe cechy składają się w rozpoznawalne obiekty.
+![[Pasted image 20241203203538.png]]
+
+
+Czym jest i do czego wykorzystuje się Pooling
+?
+Pozwala na agregację (avg lub max) sąsiadujących pikseli. Redukuje liczbę parametrów modelu, pozwala na lepszą generalizację map cech. Pooling nie podlega uczeniu - nie ma wag. 
+Propagacja wsteczna: 
+- jeśli używamy max-pool obliczany jest błąd uzyskiwany przez zwycięską jednostkę (pozostałe błędy są równe 0, dlatego trzeba pamiętać indeks zwycięskiej jednostki). •
+- Dla avg-pool błąd jest przypisywany do całego bloku i mnożony przez 1/(NxN)
+![[Pasted image 20241203204218.png]]
+
+Jaki sens w stosowaniu konwolucji dla filtra o rozmiarze 1x1
+?
+TODO
+
+Jak przebiega formuła propagacji błędu w sieciach konwolucyjnych
+?
+XD, nie będzie takiego pytania
+
+
+Czym jest VGG
+?
+Giga dużo warstw przeplatanych poolingiem. Na końcu 3 warstwy tradycyjnych sieci, a po nich softmax do klasyfikacji co jest na obrazku.
+![[Pasted image 20241203205922.png]]
+
+
+Co to GoogleNet
+?
+Jeszcze więcej warstw. Cała sieć składa się z nastackowanych bloków incepcji, które są jeszcze bardziej zagmatwane i wykorzystują konwolucje 1x1
+![[Pasted image 20241203210010.png]]
+![[Pasted image 20241203210108.png]]
+
+
+Czym jest ResNet
+?
+Podobne do VGG ale wykorzystuje połączenia rezydualne (skrótowe) wyjście z wcześniejszych warstwach jest przekazywane na wyjście następnych warstw.
+![[Pasted image 20241203210359.png]]
+
+Gdzie stosuje się konwolucję 1D
+?
+Do przetwarzania danych czasowych (np cen akcji) lub sygnału.
+
+
+
+
+
+
 
 
 
