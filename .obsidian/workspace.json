@@ -4,70 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "03a6887732d67326",
-        "type": "split",
+        "id": "8c86a79935017cdc",
+        "type": "tabs",
         "children": [
           {
-            "id": "c4da4dc413dfc0f3",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "80562864aad9d503",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "FILES/Pasted image 20240111224654.png"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "68b87762acb3fb32",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "cc2fdc57cc36ce6d",
-                "type": "leaf",
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "/bin/bash",
-                        "name": "Build-in",
-                        "platforms": {
-                          "darwin": true,
-                          "linux": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": true,
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {},
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": {
-                        "columns": 156,
-                        "data": "\r\n(base) \u001b[32;1mjakubner@jakubner\u001b[0m:\u001b[34;1m/mnt/cb8c2a81-32e7-40bc-af74-0c1386cda683/fiszki-obsidian\u001b[0m$ git commit -m finished",
-                        "rows": 20
-                      }
-                    }
-                  }
-                }
-              }
-            ]
+            "id": "64dd662e5f692c58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NN Fiszki.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NN Fiszki"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTime"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ]
@@ -104,13 +60,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hemody",
+                "query": "tag:#iot",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -118,14 +76,17 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 204.5110321044922
+    "width": 204.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "2c8dc45a2c2004ae",
@@ -141,9 +102,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "NN Fiszki.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from NN Fiszki"
             }
           },
           {
@@ -154,7 +118,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -162,15 +128,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
-            }
-          },
-          {
-            "id": "e6ff3e1049e6fe24",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {
+                "file": "NN Fiszki.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of NN Fiszki"
             }
           },
           {
@@ -179,6 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "NN Fiszki.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +149,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for NN Fiszki"
             }
           },
           {
@@ -198,7 +163,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -206,7 +173,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "NN Fiszki.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for NN Fiszki"
             }
           },
           {
@@ -214,11 +185,13 @@
             "type": "leaf",
             "state": {
               "type": "review-queue-list-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -232,27 +205,26 @@
       "canvas:Create new canvas": true,
       "command-palette:Open command palette": false,
       "templates:Insert template": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "terminal:Open terminal": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-extract-pdf-highlights:PDF Highlights": false
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "cc2fdc57cc36ce6d",
+  "active": "64dd662e5f692c58",
   "lastOpenFiles": [
-    "FILES/Pasted image 20240111224654.png",
-    "FILES/Pasted image 20240111222729.png",
-    "FILES/Pasted image 20240111224741.png",
-    "FILES/Pasted image 20240111224938.png",
-    "FILES/Pasted image 20240111234301.png",
-    "FILES/Pasted image 20240111235058.png",
-    "FILES/Pasted image 20240112000938.png",
-    "FILES/Pasted image 20240112003408.png",
-    "FILES/Pasted image 20240112003542.png",
-    "FILES/Pasted image 20240112003842.png",
-    "FILES/Pasted image 20240112130947.png",
     "Iot Fiszki.md",
+    "FILES/Pasted image 20240112142245.png",
+    "FILES/Pasted image 20240112141600.png",
+    "FILES/Pasted image 20240112133636.png",
+    "FILES/Pasted image 20240112133500.png",
+    "FILES/Pasted image 20240112133457.png",
+    "FILES/Pasted image 20240112132707.png",
+    "FILES/Pasted image 20240112132437.png",
+    "FILES/Pasted image 20240112130947.png",
+    "FILES/Pasted image 20240112130337.png",
+    "FILES/Pasted image 20240112003842.png",
+    "NN Fiszki.md",
+    "README.md",
+    "UruchomienieFIszek.mp4",
     "FILES/Belczyk_266897_IPSv2.pdf",
     "FILES/regulamin-bankuj-mobilnie-10-edycja (2).pdf",
     "tmp.canvas",
@@ -275,7 +247,6 @@
     "PWr/files/Cw01g.pdf",
     "PWr/files/Unconfirmed 738178.crdownload",
     "PWr/files/Ex0f_kotlin.pdf",
-    "PWr/files/Unconfirmed 227056.crdownload",
     "phone/Unicorn.md",
     "private/mHack.md",
     "ZETTELKASTEN/neuron.md",
@@ -286,7 +257,6 @@
     "PWr/Projektowanie oprogramowania W.md",
     "ZETTELKASTEN/swagger.md",
     "ZETTELKASTEN/The Bills.md",
-    "Excalidraw/Drawing 2023-10-28 19.44.53.excalidraw.md",
-    "ZETTELKASTEN/[TLDR] EEG-Based BCI Emotion Recognition A Survey 2015_2020.md"
+    "Excalidraw/Drawing 2023-10-28 19.44.53.excalidraw.md"
   ]
 }
