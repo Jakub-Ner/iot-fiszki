@@ -185,11 +185,13 @@ Dla każdej warstwy z osobna wylosuj z przedziału $\pm \frac{\sqrt{6}}{\sqrt{n_
 
 Jak zainicjalizować wagi korzystając z He
 ?
-TODO
+Dla każdej warstwy z osobna wylosuj z przedziału $\pm \frac{\sqrt{2}}{\sqrt{n_i}}$, gdzie $n_{i}$ to wejściowe. Biasy ustaw na 0. He zaproponował taką inicjalizację, bo trenując głęboką sieć z ReLU i inicjalizacją Xavier'a zauważył, że sieć przestała się uczyć.
+
 
 Czym jest normalizacja batch'a
 ?
-TODO
+Jest to warstwa ukryta, która normalizuje całkowite pobudzenia względem całego batch'a albo mini-batcha. Wartości $\mu, \sigma$ są wyliczane na podstawie średniej kroczącej i zapisywane. Parametry $\gamma$, $\beta \text{ s}$ są wyuczalne.
+![[Pasted image 20241204113214.png]]
 
 Czym jest Autokoder i jak się go trenuje
 ?
@@ -225,7 +227,8 @@ Propagacja wsteczna:
 
 Jaki sens w stosowaniu konwolucji dla filtra o rozmiarze 1x1
 ?
-TODO
+Używa się do redukcji ilości map cech - "podsumowuje" je . To taki Pooling map cech, który potrafi się uczyć. Polecam obejrzeć [wideo](https://www.youtube.com/watch?v=wf2HblQbP-U)
+![What are 1x1 convolutions](https://www.youtube.com/watch?v=wf2HblQbP-U)
 
 Jak przebiega formuła propagacji błędu w sieciach konwolucyjnych
 ?
