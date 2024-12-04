@@ -8,6 +8,8 @@ Czym wyróżnia się perceptron prosty (Model Pittsa-Mc Cullocha)
 ?
 Funkcja aktywacji zwraca dwie wartości - neuron jest pobudzony albo nie. Dodatkowo nie ma elementu nauki.
 
+<div style="page-break-before: always;"></div>
+
 ## Wykład 2
 
 Czym wyróżnia się ADALINE
@@ -37,6 +39,8 @@ Czym jest softmax
 ?
 ![[Pasted image 20241203133046.png]]
 
+<div style="page-break-before: always;"></div>
+
 ## Wykład 3
 
 Jak wyglądają funkcje aktywacji i ich pochodne: **sigmoid, tangens hiperboliczny, relu, softplus**.
@@ -47,6 +51,7 @@ Czym jest N-Fold Cross-Validation i kiedy warto jej użyć
 ?
 ![[Pasted image 20241203135230.png]]
 
+<div style="page-break-before: always;"></div>
 
 ## Wykład 4
 
@@ -63,8 +68,9 @@ $\tanh(x) = 2sigm(2x) - 1$
 
 Czym jest problem zanikającego gradientu
 ?
-Bardzo duże lub małe pobudzenie neuronów, powoduje że aktywacja dla sigmoida lub tanh wynosi zawsze 0 lub 1. To prowadzi do niskich wartości gradientu, co przekłada się na wartość zmiany wag (a raczej jej brak). Poza funkcją aktywacji, odpowiedzialne za to zjawisko może być zła inicjalizacja wag - 
-nadanie im zbyt dużej wartości początkowej. Jeśli mamy do czynienia z zanikającym gradientem, warto zastosować RELU.
+Bardzo duże lub małe pobudzenie neuronów, powoduje że aktywacja dla sigmoida lub tanh wynosi zawsze 0 lub 1. To prowadzi do niskich wartości gradientu, co przekłada się na wartość zmiany wag (a raczej jej brak). Poza funkcją aktywacji, odpowiedzialne za to zjawisko może być zła inicjalizacja wag - nadanie im zbyt małej lub dużej wartości początkowej. Jeśli mamy do czynienia z zanikającym gradientem, warto zastosować RELU.
+![[Pasted image 20241204100032.png]]
+
 
 Czym jest problem wybuchającego gradientu
 ?
@@ -74,6 +80,8 @@ Korzystanie z RELU może powodować wysokie wartości gradientu, które w wyniku
 Bias a wariancja
 ?
 ![[Pasted image 20241203170638.png]]
+
+<div style="page-break-before: always;"></div>
 
 ## Wykład 5
 
@@ -126,6 +134,8 @@ Wymień dobre praktyki w projektowaniu sieci MLP
 - skalowanie i normalizacja cech o wartościach rzeczywistych
 - liczba neuronów w warstwie ukrytej to $n_h = \frac{n_{in} + n_{out}}{2}$ lub $n_h = \sqrt{n_{in} n_{out}}$
 - Po trenowaniu zwizualizuj gradienty w każdej warstwie sieci , jeśli większość z nich jest bliska 0 =>większość neuronów przestała się uczyć albo nie działa propagacja wsteczna.
+
+<div style="page-break-before: always;"></div>
 
 ## Wykład 6
 
@@ -187,6 +197,8 @@ Jest to sieć wykorzystująca uczenie nienadzorowane. Składa się z enkodera i 
 ![[Pasted image 20241203201235.png]]
 ![[Pasted image 20241203201529.png]]
 
+<div style="page-break-before: always;"></div>
+
 ## Wykład 7
 
 Czemu MLP nie radzą sobie za dobrze z obrazami
@@ -240,28 +252,33 @@ Gdzie stosuje się konwolucję 1D
 ?
 Do przetwarzania danych czasowych (np cen akcji) lub sygnału.
 
+<div style="page-break-before: always;"></div>
+
+## Wykład 8
+
+Czym cechuje się sieć rekurencyjna (RNN)
+?
+1. Może przetwarzać dane o dowolnej długości ("ala" i "ala ma kota")
+2. Jest oparty na DAG (skierowanym grafie acyklicznym)
+3. Cykle działają jako pamięć ($h_{i}$), która jest dodawana do wejścia ($x_{i}$)
+4. Mamy tu do czynienia ze współdzieleniem parametrów -każdy $x_{0..n}$ jest przemnażany przez tę samą wagę $A^{i}$, a każdy $h_{0..n}$ jest przemnażany przez tę samą wagę $W^{i}$, gdzie $i$ to index warstwy.
+5. Są wolniejsze a pamięć, działa tylko w teorii, chociaż **LSTM** i **GRU** starają się zwiększyć efektywność zapamiętywania
+![[Pasted image 20241204094643.png]]
+
+Czym jest Long-Short-Term-Memory (**LSTM**) 
+?
+Jest to RNN, który składa się z komórek, które poza pobudzeniem Z, mają 3 rodzaje bramek: **forget, input i output**
+![[Pasted image 20241204100816.png]]
 
 
+Czym jest Gated Recurrent Unit (**GRU**)
+?
+Alternatywa dla LSTM. Zastępuje dwie bramki (**forget** i **input**) bramką **update**. Wprowadza **reset**
+![[Pasted image 20241204101116.png]]
 
+Jakie są scenariusze zastosowań RNN?
+![[Pasted image 20241204101739.png]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+LSTM w praktyce (to nie jest pytanie xd)
+?
+![[Pasted image 20241204101702.png]]

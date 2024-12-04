@@ -194,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -210,18 +209,19 @@
   },
   "active": "64dd662e5f692c58",
   "lastOpenFiles": [
+    "FILES/Pasted image 20241204101739.png",
+    "FILES/Pasted image 20241204101702.png",
+    "FILES/Pasted image 20241204101627.png",
+    "FILES/Pasted image 20241204101116.png",
+    "FILES/Pasted image 20241204100816.png",
+    "FILES/Pasted image 20241204100032.png",
+    "FILES/Pasted image 20241204094643.png",
     "NN Fiszki.pdf",
     "FILES/Pasted image 20241204003925.png",
     "FILES/Pasted image 20241204003750.png",
     "FILES/Pasted image 20241204003451.png",
     "FILES/Pasted image 20241204003242.png",
-    "FILES/Pasted image 20241204002559.png",
     "NN Fiszki.md",
-    "FILES/Pasted image 20241203210359.png",
-    "FILES/Pasted image 20241203210108.png",
-    "FILES/Pasted image 20241203210010.png",
-    "FILES/Pasted image 20241203205922.png",
-    "FILES/Pasted image 20241203204218.png",
     "README.md",
     "Iot Fiszki.md",
     "UruchomienieFIszek.mp4",
@@ -246,7 +246,6 @@
     "PWr/files/ampa03c.pdf",
     "PWr/files/Cw01g.pdf",
     "PWr/files/Unconfirmed 738178.crdownload",
-    "PWr/files/Ex0f_kotlin.pdf",
     "phone/Unicorn.md",
     "private/mHack.md",
     "ZETTELKASTEN/neuron.md",
